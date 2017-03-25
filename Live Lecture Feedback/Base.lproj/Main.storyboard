@@ -266,7 +266,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gl-0p-IDe">
-                                <rect key="frame" x="0.0" y="63.999999999999993" width="414" height="32.333333333333321"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="31.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -328,6 +328,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBR-Wg-heT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1496" y="136"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xf5-EB-VgR">
+            <objects>
+                <viewController id="iWn-of-YzE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="odX-c2-Z0I"/>
+                        <viewControllerLayoutGuide type="bottom" id="fEf-FV-CkZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rcg-0Q-B6i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEg-rm-jxQ">
+                                <rect key="frame" x="182.66666666666666" y="686" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fEf-FV-CkZ" firstAttribute="top" secondItem="MEg-rm-jxQ" secondAttribute="bottom" constant="20" id="FNM-2M-rhT"/>
+                            <constraint firstItem="MEg-rm-jxQ" firstAttribute="centerX" secondItem="rcg-0Q-B6i" secondAttribute="centerX" id="ofv-5k-dOe"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="MEg-rm-jxQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ofv-5k-dOe"/>
+                                <exclude reference="FNM-2M-rhT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="MEg-rm-jxQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ofv-5k-dOe"/>
+                                <include reference="FNM-2M-rhT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="MEg-rm-jxQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ofv-5k-dOe"/>
+                                <include reference="FNM-2M-rhT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s5O-AM-BBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2160.8695652173915" y="134.5108695652174"/>
         </scene>
     </scenes>
 </document>
