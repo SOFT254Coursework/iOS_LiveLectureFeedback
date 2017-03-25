@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -148,6 +149,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="grS-Hc-Lhf">
+            <objects>
+                <viewController id="9KN-Cl-dz1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VQD-MW-fDV"/>
+                        <viewControllerLayoutGuide type="bottom" id="WLW-8S-Lwr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0a2-OZ-3yU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M2S-Df-CVS">
+                                <rect key="frame" x="158.66666666666666" y="353" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfL-Bz-nkg">
+                                <rect key="frame" x="158.66666666666663" y="391" width="97.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFx-Vu-iVa">
+                                <rect key="frame" x="182.66666666666666" y="481" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cFx-Vu-iVa" firstAttribute="centerX" secondItem="M2S-Df-CVS" secondAttribute="centerX" id="1GH-lm-Mt1"/>
+                            <constraint firstItem="nfL-Bz-nkg" firstAttribute="leading" secondItem="M2S-Df-CVS" secondAttribute="leading" id="2g6-cy-FPa"/>
+                            <constraint firstItem="M2S-Df-CVS" firstAttribute="width" secondItem="0a2-OZ-3yU" secondAttribute="height" multiplier="97:736" id="CBn-QA-dCU"/>
+                            <constraint firstItem="M2S-Df-CVS" firstAttribute="centerX" secondItem="0a2-OZ-3yU" secondAttribute="centerX" id="SC9-9x-ryd"/>
+                            <constraint firstItem="M2S-Df-CVS" firstAttribute="centerY" secondItem="0a2-OZ-3yU" secondAttribute="centerY" id="fbU-yZ-OQ5"/>
+                            <constraint firstItem="cFx-Vu-iVa" firstAttribute="top" secondItem="M2S-Df-CVS" secondAttribute="bottom" constant="98" id="iyR-oC-3tu"/>
+                            <constraint firstItem="nfL-Bz-nkg" firstAttribute="width" secondItem="M2S-Df-CVS" secondAttribute="width" id="pfM-Dc-Bo4"/>
+                            <constraint firstItem="nfL-Bz-nkg" firstAttribute="top" secondItem="M2S-Df-CVS" secondAttribute="bottom" constant="8" id="pic-1G-nkv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CBn-QA-dCU"/>
+                                <exclude reference="SC9-9x-ryd"/>
+                                <exclude reference="fbU-yZ-OQ5"/>
+                                <exclude reference="2g6-cy-FPa"/>
+                                <exclude reference="pfM-Dc-Bo4"/>
+                                <exclude reference="pic-1G-nkv"/>
+                                <exclude reference="1GH-lm-Mt1"/>
+                                <exclude reference="iyR-oC-3tu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="CBn-QA-dCU"/>
+                                <include reference="SC9-9x-ryd"/>
+                                <include reference="fbU-yZ-OQ5"/>
+                                <include reference="2g6-cy-FPa"/>
+                                <include reference="pfM-Dc-Bo4"/>
+                                <include reference="pic-1G-nkv"/>
+                                <include reference="1GH-lm-Mt1"/>
+                                <include reference="iyR-oC-3tu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="CBn-QA-dCU"/>
+                                <include reference="SC9-9x-ryd"/>
+                                <include reference="fbU-yZ-OQ5"/>
+                                <include reference="2g6-cy-FPa"/>
+                                <include reference="pfM-Dc-Bo4"/>
+                                <include reference="pic-1G-nkv"/>
+                                <include reference="1GH-lm-Mt1"/>
+                                <include reference="iyR-oC-3tu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BGw-sY-Dcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="827.536231884058" y="136.95652173913044"/>
         </scene>
     </scenes>
 </document>
