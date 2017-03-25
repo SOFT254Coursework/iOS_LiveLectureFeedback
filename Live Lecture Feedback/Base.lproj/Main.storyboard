@@ -191,6 +191,11 @@
                             <constraint firstItem="nfL-Bz-nkg" firstAttribute="top" secondItem="M2S-Df-CVS" secondAttribute="bottom" constant="8" id="pic-1G-nkv"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="M2S-Df-CVS"/>
+                                <exclude reference="nfL-Bz-nkg"/>
+                                <exclude reference="cFx-Vu-iVa"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="CBn-QA-dCU"/>
                                 <exclude reference="SC9-9x-ryd"/>
@@ -203,6 +208,11 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="M2S-Df-CVS"/>
+                                <include reference="nfL-Bz-nkg"/>
+                                <include reference="cFx-Vu-iVa"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="CBn-QA-dCU"/>
                                 <include reference="SC9-9x-ryd"/>
@@ -215,6 +225,11 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="M2S-Df-CVS"/>
+                                <include reference="nfL-Bz-nkg"/>
+                                <include reference="cFx-Vu-iVa"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="CBn-QA-dCU"/>
                                 <include reference="SC9-9x-ryd"/>
@@ -231,6 +246,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGw-sY-Dcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="827.536231884058" y="136.95652173913044"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Lz-ZP-23m">
+            <objects>
+                <viewController id="FFr-B7-ubx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r1C-ya-kkO"/>
+                        <viewControllerLayoutGuide type="bottom" id="cLA-hD-en2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bqQ-Tn-pgO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZD-5T-4nS">
+                                <rect key="frame" x="0.0" y="20" width="414" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gl-0p-IDe">
+                                <rect key="frame" x="0.0" y="63.999999999999993" width="414" height="32.333333333333321"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FZD-5T-4nS" firstAttribute="width" secondItem="bqQ-Tn-pgO" secondAttribute="width" id="6nL-nE-AYK"/>
+                            <constraint firstItem="FZD-5T-4nS" firstAttribute="centerX" secondItem="bqQ-Tn-pgO" secondAttribute="centerX" id="B0G-Zu-pf1"/>
+                            <constraint firstItem="7gl-0p-IDe" firstAttribute="centerX" secondItem="FZD-5T-4nS" secondAttribute="centerX" id="WUC-n6-GjU"/>
+                            <constraint firstItem="7gl-0p-IDe" firstAttribute="width" secondItem="FZD-5T-4nS" secondAttribute="width" id="WeE-Qe-lti"/>
+                            <constraint firstItem="7gl-0p-IDe" firstAttribute="top" secondItem="FZD-5T-4nS" secondAttribute="bottom" constant="8" id="qhH-xr-UNC"/>
+                            <constraint firstItem="FZD-5T-4nS" firstAttribute="top" secondItem="r1C-ya-kkO" secondAttribute="bottom" id="rtJ-df-HCr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FZD-5T-4nS"/>
+                                <exclude reference="7gl-0p-IDe"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6nL-nE-AYK"/>
+                                <exclude reference="B0G-Zu-pf1"/>
+                                <exclude reference="rtJ-df-HCr"/>
+                                <exclude reference="WUC-n6-GjU"/>
+                                <exclude reference="WeE-Qe-lti"/>
+                                <exclude reference="qhH-xr-UNC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="FZD-5T-4nS"/>
+                                <include reference="7gl-0p-IDe"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6nL-nE-AYK"/>
+                                <include reference="B0G-Zu-pf1"/>
+                                <include reference="rtJ-df-HCr"/>
+                                <include reference="WUC-n6-GjU"/>
+                                <include reference="WeE-Qe-lti"/>
+                                <include reference="qhH-xr-UNC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="FZD-5T-4nS"/>
+                                <include reference="7gl-0p-IDe"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6nL-nE-AYK"/>
+                                <include reference="B0G-Zu-pf1"/>
+                                <include reference="rtJ-df-HCr"/>
+                                <include reference="WUC-n6-GjU"/>
+                                <include reference="WeE-Qe-lti"/>
+                                <include reference="qhH-xr-UNC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBR-Wg-heT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1496" y="136"/>
         </scene>
     </scenes>
 </document>
