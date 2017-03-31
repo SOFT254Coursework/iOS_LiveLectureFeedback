@@ -12,6 +12,13 @@
 		20BF3D521E858090005979F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BF3D501E858090005979F3 /* Main.storyboard */; };
 		20BF3D541E858090005979F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BF3D531E858090005979F3 /* Assets.xcassets */; };
 		20BF3D571E858090005979F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BF3D551E858090005979F3 /* LaunchScreen.storyboard */; };
+		31882F791E8E93780043CBA1 /* StudentSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F781E8E93780043CBA1 /* StudentSignUpViewController.swift */; };
+		31882F7B1E8E940C0043CBA1 /* StudentSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F7A1E8E940C0043CBA1 /* StudentSessionViewController.swift */; };
+		31882F7D1E8E94520043CBA1 /* StudentReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F7C1E8E94520043CBA1 /* StudentReviewViewController.swift */; };
+		31882F7F1E8E94CB0043CBA1 /* TutorLecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F7E1E8E94CB0043CBA1 /* TutorLecturesViewController.swift */; };
+		31882F811E8E951E0043CBA1 /* TutorCreateLectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F801E8E951E0043CBA1 /* TutorCreateLectureViewController.swift */; };
+		31882F831E8E95680043CBA1 /* TutorLectureStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F821E8E95680043CBA1 /* TutorLectureStatusViewController.swift */; };
+		31882F851E8E95EB0043CBA1 /* TutorLectureReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F841E8E95EB0043CBA1 /* TutorLectureReviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		20BF3D531E858090005979F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20BF3D561E858090005979F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20BF3D581E858090005979F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31882F781E8E93780043CBA1 /* StudentSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentSignUpViewController.swift; sourceTree = "<group>"; };
+		31882F7A1E8E940C0043CBA1 /* StudentSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentSessionViewController.swift; sourceTree = "<group>"; };
+		31882F7C1E8E94520043CBA1 /* StudentReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentReviewViewController.swift; sourceTree = "<group>"; };
+		31882F7E1E8E94CB0043CBA1 /* TutorLecturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorLecturesViewController.swift; sourceTree = "<group>"; };
+		31882F801E8E951E0043CBA1 /* TutorCreateLectureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorCreateLectureViewController.swift; sourceTree = "<group>"; };
+		31882F821E8E95680043CBA1 /* TutorLectureStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorLectureStatusViewController.swift; sourceTree = "<group>"; };
+		31882F841E8E95EB0043CBA1 /* TutorLectureReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorLectureReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,13 @@
 			children = (
 				20BF3D4C1E858090005979F3 /* AppDelegate.swift */,
 				20BF3D4E1E858090005979F3 /* ViewController.swift */,
+				31882F781E8E93780043CBA1 /* StudentSignUpViewController.swift */,
+				31882F7A1E8E940C0043CBA1 /* StudentSessionViewController.swift */,
+				31882F7C1E8E94520043CBA1 /* StudentReviewViewController.swift */,
+				31882F7E1E8E94CB0043CBA1 /* TutorLecturesViewController.swift */,
+				31882F801E8E951E0043CBA1 /* TutorCreateLectureViewController.swift */,
+				31882F821E8E95680043CBA1 /* TutorLectureStatusViewController.swift */,
+				31882F841E8E95EB0043CBA1 /* TutorLectureReviewViewController.swift */,
 				20BF3D501E858090005979F3 /* Main.storyboard */,
 				20BF3D531E858090005979F3 /* Assets.xcassets */,
 				20BF3D551E858090005979F3 /* LaunchScreen.storyboard */,
@@ -137,7 +158,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BF3D4F1E858090005979F3 /* ViewController.swift in Sources */,
+				31882F7D1E8E94520043CBA1 /* StudentReviewViewController.swift in Sources */,
+				31882F851E8E95EB0043CBA1 /* TutorLectureReviewViewController.swift in Sources */,
+				31882F7F1E8E94CB0043CBA1 /* TutorLecturesViewController.swift in Sources */,
+				31882F811E8E951E0043CBA1 /* TutorCreateLectureViewController.swift in Sources */,
 				20BF3D4D1E858090005979F3 /* AppDelegate.swift in Sources */,
+				31882F791E8E93780043CBA1 /* StudentSignUpViewController.swift in Sources */,
+				31882F831E8E95680043CBA1 /* TutorLectureStatusViewController.swift in Sources */,
+				31882F7B1E8E940C0043CBA1 /* StudentSessionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +327,7 @@
 				20BF3D5D1E858090005979F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
