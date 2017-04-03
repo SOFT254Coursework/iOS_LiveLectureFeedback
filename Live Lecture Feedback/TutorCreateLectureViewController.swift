@@ -38,6 +38,7 @@ class TutorCreateLectureViewController: UIViewController, UIPickerViewDelegate, 
             return 3}
         else{
             return 2
+            
         }
     }
     
@@ -73,20 +74,20 @@ class TutorCreateLectureViewController: UIViewController, UIPickerViewDelegate, 
         case startDatePickerView, endDatePickerView:
             switch (component){
             case 0:
-                return String(format: "%4.0f", self.listOfDays[row])
+                return String(self.listOfDays[row])
             case 1:
                 return self.listOfMonths[row]
             case 2:
-                return String(format: "%4.0f", self.listOfYears[row])
+                return String(self.listOfYears[row])
             default:
                 return ""
             }
         case startTimePickerView, endTimePickerView:
             switch (component){
             case 0:
-                return String(format: "%4.0", self.listOfHours[row])
+                return String(self.listOfHours[row])
             case 1:
-                return String(format: "%4.0f", self.listOfMinutes[row])
+                return String(self.listOfMinutes[row])
             default:
                 return ""
             }
