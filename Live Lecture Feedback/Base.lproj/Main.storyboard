@@ -45,6 +45,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyi-cc-m5W">
                                 <rect key="frame" x="359.5" y="626.5" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="homeSubmitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hba-js-Fy7"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XS4-av-TcI">
                                 <rect key="frame" x="143" y="497" width="482" height="30"/>
@@ -213,6 +216,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="homeSubmitOutlet" destination="Eyi-cc-m5W" id="cbC-8S-f5U"/>
+                        <outlet property="idNumberOutlet" destination="Lk8-TG-cp1" id="C7U-oW-5I7"/>
+                        <outlet property="passwordOutlet" destination="XS4-av-TcI" id="TAH-ZD-nxP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,6 +261,7 @@
                                 <rect key="frame" x="369" y="974" width="30" height="30"/>
                                 <state key="normal" title="Exit"/>
                                 <connections>
+                                    <action selector="studentSessionExitAction:" destination="9KN-Cl-dz1" eventType="touchUpInside" id="fUy-11-SE2"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="RqF-5e-eTv"/>
                                 </connections>
                             </button>
@@ -278,6 +287,7 @@
                                 <exclude reference="CJJ-cH-Nf5"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Ljg-sD-Wiu"/>
                                 <exclude reference="CBn-QA-dCU"/>
                                 <exclude reference="SC9-9x-ryd"/>
                                 <exclude reference="fbU-yZ-OQ5"/>
@@ -287,7 +297,6 @@
                                 <exclude reference="1GH-lm-Mt1"/>
                                 <exclude reference="iyR-oC-3tu"/>
                                 <exclude reference="PrM-wI-Kmm"/>
-                                <exclude reference="Ljg-sD-Wiu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -298,6 +307,7 @@
                                 <include reference="CJJ-cH-Nf5"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Ljg-sD-Wiu"/>
                                 <include reference="CBn-QA-dCU"/>
                                 <include reference="SC9-9x-ryd"/>
                                 <include reference="fbU-yZ-OQ5"/>
@@ -307,7 +317,6 @@
                                 <include reference="1GH-lm-Mt1"/>
                                 <include reference="iyR-oC-3tu"/>
                                 <include reference="PrM-wI-Kmm"/>
-                                <include reference="Ljg-sD-Wiu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -318,6 +327,7 @@
                                 <include reference="CJJ-cH-Nf5"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Ljg-sD-Wiu"/>
                                 <include reference="CBn-QA-dCU"/>
                                 <include reference="SC9-9x-ryd"/>
                                 <include reference="fbU-yZ-OQ5"/>
@@ -327,7 +337,6 @@
                                 <include reference="1GH-lm-Mt1"/>
                                 <include reference="iyR-oC-3tu"/>
                                 <include reference="PrM-wI-Kmm"/>
-                                <include reference="Ljg-sD-Wiu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -338,6 +347,7 @@
                                 <include reference="CJJ-cH-Nf5"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Ljg-sD-Wiu"/>
                                 <include reference="CBn-QA-dCU"/>
                                 <include reference="SC9-9x-ryd"/>
                                 <include reference="fbU-yZ-OQ5"/>
@@ -347,10 +357,14 @@
                                 <include reference="1GH-lm-Mt1"/>
                                 <include reference="iyR-oC-3tu"/>
                                 <include reference="PrM-wI-Kmm"/>
-                                <include reference="Ljg-sD-Wiu"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="studentSessionExitOutlet" destination="CJJ-cH-Nf5" id="LZ8-ww-nsI"/>
+                        <outlet property="studentSessionIdOutlet" destination="M2S-Df-CVS" id="BcR-6K-m5d"/>
+                        <outlet property="studentSessionSubmitOutlet" destination="cFx-Vu-iVa" id="gL9-mT-dMT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGw-sY-Dcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -382,9 +396,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87X-hu-TZP">
-                                <rect key="frame" x="368.5" y="888" width="31" height="30"/>
-                                <state key="normal" title="New"/>
+                                <rect key="frame" x="361" y="888" width="46" height="30"/>
+                                <state key="normal" title="Create"/>
                                 <connections>
+                                    <action selector="tutorLecturesCreateAction:" destination="ufv-Nf-glt" eventType="touchUpInside" id="JyN-5a-k9t"/>
                                     <segue destination="zaA-pt-0IY" kind="presentation" id="9UK-gO-8S8"/>
                                 </connections>
                             </button>
@@ -392,6 +407,7 @@
                                 <rect key="frame" x="369" y="816" width="30" height="30"/>
                                 <state key="normal" title="Exit"/>
                                 <connections>
+                                    <action selector="tutorsLecturesExitAction:" destination="ufv-Nf-glt" eventType="touchUpInside" id="igf-AH-IOK"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="bw2-4I-Goi"/>
                                 </connections>
                             </button>
@@ -415,6 +431,7 @@
                                 <exclude reference="jfw-Cq-4q7"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="CDj-rl-Hph"/>
                                 <exclude reference="KWb-fz-ooJ"/>
                                 <exclude reference="v73-KB-dZP"/>
                                 <exclude reference="Z66-88-YZo"/>
@@ -422,7 +439,6 @@
                                 <exclude reference="yUM-Hz-qFN"/>
                                 <exclude reference="Qgs-zL-VKh"/>
                                 <exclude reference="RsL-8K-w16"/>
-                                <exclude reference="CDj-rl-Hph"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -433,6 +449,7 @@
                                 <include reference="jfw-Cq-4q7"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="CDj-rl-Hph"/>
                                 <include reference="KWb-fz-ooJ"/>
                                 <include reference="v73-KB-dZP"/>
                                 <include reference="Z66-88-YZo"/>
@@ -440,7 +457,6 @@
                                 <include reference="yUM-Hz-qFN"/>
                                 <include reference="Qgs-zL-VKh"/>
                                 <include reference="RsL-8K-w16"/>
-                                <include reference="CDj-rl-Hph"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -451,6 +467,7 @@
                                 <include reference="jfw-Cq-4q7"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="CDj-rl-Hph"/>
                                 <include reference="KWb-fz-ooJ"/>
                                 <include reference="v73-KB-dZP"/>
                                 <include reference="Z66-88-YZo"/>
@@ -458,7 +475,6 @@
                                 <include reference="yUM-Hz-qFN"/>
                                 <include reference="Qgs-zL-VKh"/>
                                 <include reference="RsL-8K-w16"/>
-                                <include reference="CDj-rl-Hph"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -469,6 +485,7 @@
                                 <include reference="jfw-Cq-4q7"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="CDj-rl-Hph"/>
                                 <include reference="KWb-fz-ooJ"/>
                                 <include reference="v73-KB-dZP"/>
                                 <include reference="Z66-88-YZo"/>
@@ -476,10 +493,13 @@
                                 <include reference="yUM-Hz-qFN"/>
                                 <include reference="Qgs-zL-VKh"/>
                                 <include reference="RsL-8K-w16"/>
-                                <include reference="CDj-rl-Hph"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="tutorLecturesCreateOutlet" destination="87X-hu-TZP" id="fV7-ML-Bu7"/>
+                        <outlet property="tutorLecturesExitOutlet" destination="jfw-Cq-4q7" id="3Gx-P2-cyn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udn-lu-foc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -501,6 +521,7 @@
                                 <rect key="frame" x="20" y="20" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
+                                    <action selector="tutorSetLectureCancelAction:" destination="zaA-pt-0IY" eventType="touchUpInside" id="PE8-JE-Nnx"/>
                                     <segue destination="ufv-Nf-glt" kind="presentation" id="JvZ-pu-7Eg"/>
                                 </connections>
                             </button>
@@ -508,6 +529,7 @@
                                 <rect key="frame" x="340" y="20" width="88" height="30"/>
                                 <state key="normal" title="Create Event"/>
                                 <connections>
+                                    <action selector="tutorSetLectureCreateAction:" destination="zaA-pt-0IY" eventType="touchUpInside" id="jNF-aC-q0T"/>
                                     <segue destination="9xR-Xk-1pM" kind="presentation" id="mIP-jQ-LrV"/>
                                 </connections>
                             </button>
@@ -526,22 +548,37 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwC-f4-hYf">
                                 <rect key="frame" x="20" y="353" width="30" height="30"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="tutorSetLectureLec1Action:" destination="zaA-pt-0IY" eventType="touchUpInside" id="uHZ-EX-tiZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwi-Bc-Q6d">
                                 <rect key="frame" x="58" y="353" width="30" height="30"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="tutorSetLectureLec2Action:" destination="zaA-pt-0IY" eventType="touchUpInside" id="TZ7-d8-QGj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Was-kr-Efl">
                                 <rect key="frame" x="96" y="353" width="30" height="30"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="tutorSetLectureLec3Action:" destination="zaA-pt-0IY" eventType="touchUpInside" id="cmm-PS-Vi2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTr-ch-ezB">
                                 <rect key="frame" x="134" y="353" width="30" height="30"/>
                                 <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="tutorSetLectureLec4Action:" destination="zaA-pt-0IY" eventType="touchUpInside" id="u8z-b3-LJd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGm-Pg-9SB">
                                 <rect key="frame" x="172" y="353" width="30" height="30"/>
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="tutorSetLectureLec5Action:" destination="zaA-pt-0IY" eventType="touchUpInside" id="ffk-J8-4so"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of sessions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siN-KV-gw6">
                                 <rect key="frame" x="20" y="324" width="152.5" height="21"/>
@@ -669,32 +706,32 @@
                                 <exclude reference="nTX-tr-v93"/>
                                 <exclude reference="UwV-nk-1zX"/>
                                 <exclude reference="hiH-uR-bJ1"/>
-                                <exclude reference="9AG-9I-Ufn"/>
-                                <exclude reference="zpr-Gm-jKU"/>
                                 <exclude reference="8vo-tI-woa"/>
                                 <exclude reference="h6K-Sb-57B"/>
+                                <exclude reference="9AG-9I-Ufn"/>
+                                <exclude reference="zpr-Gm-jKU"/>
                                 <exclude reference="DQ7-4o-rAv"/>
                                 <exclude reference="bMR-wV-3yo"/>
                                 <exclude reference="xOS-xq-vDG"/>
                                 <exclude reference="ze8-3D-f0f"/>
                                 <exclude reference="kSX-IE-cMS"/>
                                 <exclude reference="wHa-SK-M5Z"/>
-                                <exclude reference="QOf-2T-AuT"/>
-                                <exclude reference="Seh-go-3j3"/>
                                 <exclude reference="W5d-7C-1Fr"/>
                                 <exclude reference="pmP-kG-ZkO"/>
+                                <exclude reference="QOf-2T-AuT"/>
+                                <exclude reference="Seh-go-3j3"/>
                                 <exclude reference="etc-Vq-SsL"/>
                                 <exclude reference="mb3-yQ-I1j"/>
-                                <exclude reference="oCG-Vk-mw3"/>
                                 <exclude reference="3Ms-mO-THW"/>
                                 <exclude reference="m9e-Xa-W7a"/>
                                 <exclude reference="5pz-jj-nYh"/>
                                 <exclude reference="alN-10-qeH"/>
+                                <exclude reference="oCG-Vk-mw3"/>
+                                <exclude reference="jli-yv-Gpe"/>
                                 <exclude reference="EF9-Nt-Wb9"/>
                                 <exclude reference="LdV-KI-jN3"/>
                                 <exclude reference="ju2-r7-cRM"/>
                                 <exclude reference="XcH-xg-Hka"/>
-                                <exclude reference="jli-yv-Gpe"/>
                                 <exclude reference="aFT-5e-hX9"/>
                                 <exclude reference="dTT-6t-Itv"/>
                                 <exclude reference="g46-M4-hRu"/>
@@ -729,32 +766,32 @@
                                 <include reference="nTX-tr-v93"/>
                                 <include reference="UwV-nk-1zX"/>
                                 <include reference="hiH-uR-bJ1"/>
-                                <include reference="9AG-9I-Ufn"/>
-                                <include reference="zpr-Gm-jKU"/>
                                 <include reference="8vo-tI-woa"/>
                                 <include reference="h6K-Sb-57B"/>
+                                <include reference="9AG-9I-Ufn"/>
+                                <include reference="zpr-Gm-jKU"/>
                                 <include reference="DQ7-4o-rAv"/>
                                 <include reference="bMR-wV-3yo"/>
                                 <include reference="xOS-xq-vDG"/>
                                 <include reference="ze8-3D-f0f"/>
                                 <include reference="kSX-IE-cMS"/>
                                 <include reference="wHa-SK-M5Z"/>
-                                <include reference="QOf-2T-AuT"/>
-                                <include reference="Seh-go-3j3"/>
                                 <include reference="W5d-7C-1Fr"/>
                                 <include reference="pmP-kG-ZkO"/>
+                                <include reference="QOf-2T-AuT"/>
+                                <include reference="Seh-go-3j3"/>
                                 <include reference="etc-Vq-SsL"/>
                                 <include reference="mb3-yQ-I1j"/>
-                                <include reference="oCG-Vk-mw3"/>
                                 <include reference="3Ms-mO-THW"/>
                                 <include reference="m9e-Xa-W7a"/>
                                 <include reference="5pz-jj-nYh"/>
                                 <include reference="alN-10-qeH"/>
+                                <include reference="oCG-Vk-mw3"/>
+                                <include reference="jli-yv-Gpe"/>
                                 <include reference="EF9-Nt-Wb9"/>
                                 <include reference="LdV-KI-jN3"/>
                                 <include reference="ju2-r7-cRM"/>
                                 <include reference="XcH-xg-Hka"/>
-                                <include reference="jli-yv-Gpe"/>
                                 <include reference="aFT-5e-hX9"/>
                                 <include reference="dTT-6t-Itv"/>
                                 <include reference="g46-M4-hRu"/>
@@ -789,32 +826,32 @@
                                 <include reference="nTX-tr-v93"/>
                                 <include reference="UwV-nk-1zX"/>
                                 <include reference="hiH-uR-bJ1"/>
-                                <include reference="9AG-9I-Ufn"/>
-                                <include reference="zpr-Gm-jKU"/>
                                 <include reference="8vo-tI-woa"/>
                                 <include reference="h6K-Sb-57B"/>
+                                <include reference="9AG-9I-Ufn"/>
+                                <include reference="zpr-Gm-jKU"/>
                                 <include reference="DQ7-4o-rAv"/>
                                 <include reference="bMR-wV-3yo"/>
                                 <include reference="xOS-xq-vDG"/>
                                 <include reference="ze8-3D-f0f"/>
                                 <include reference="kSX-IE-cMS"/>
                                 <include reference="wHa-SK-M5Z"/>
-                                <include reference="QOf-2T-AuT"/>
-                                <include reference="Seh-go-3j3"/>
                                 <include reference="W5d-7C-1Fr"/>
                                 <include reference="pmP-kG-ZkO"/>
+                                <include reference="QOf-2T-AuT"/>
+                                <include reference="Seh-go-3j3"/>
                                 <include reference="etc-Vq-SsL"/>
                                 <include reference="mb3-yQ-I1j"/>
-                                <include reference="oCG-Vk-mw3"/>
                                 <include reference="3Ms-mO-THW"/>
                                 <include reference="m9e-Xa-W7a"/>
                                 <include reference="5pz-jj-nYh"/>
                                 <include reference="alN-10-qeH"/>
+                                <include reference="oCG-Vk-mw3"/>
+                                <include reference="jli-yv-Gpe"/>
                                 <include reference="EF9-Nt-Wb9"/>
                                 <include reference="LdV-KI-jN3"/>
                                 <include reference="ju2-r7-cRM"/>
                                 <include reference="XcH-xg-Hka"/>
-                                <include reference="jli-yv-Gpe"/>
                                 <include reference="aFT-5e-hX9"/>
                                 <include reference="dTT-6t-Itv"/>
                                 <include reference="g46-M4-hRu"/>
@@ -849,32 +886,32 @@
                                 <include reference="nTX-tr-v93"/>
                                 <include reference="UwV-nk-1zX"/>
                                 <include reference="hiH-uR-bJ1"/>
-                                <include reference="9AG-9I-Ufn"/>
-                                <include reference="zpr-Gm-jKU"/>
                                 <include reference="8vo-tI-woa"/>
                                 <include reference="h6K-Sb-57B"/>
+                                <include reference="9AG-9I-Ufn"/>
+                                <include reference="zpr-Gm-jKU"/>
                                 <include reference="DQ7-4o-rAv"/>
                                 <include reference="bMR-wV-3yo"/>
                                 <include reference="xOS-xq-vDG"/>
                                 <include reference="ze8-3D-f0f"/>
                                 <include reference="kSX-IE-cMS"/>
                                 <include reference="wHa-SK-M5Z"/>
-                                <include reference="QOf-2T-AuT"/>
-                                <include reference="Seh-go-3j3"/>
                                 <include reference="W5d-7C-1Fr"/>
                                 <include reference="pmP-kG-ZkO"/>
+                                <include reference="QOf-2T-AuT"/>
+                                <include reference="Seh-go-3j3"/>
                                 <include reference="etc-Vq-SsL"/>
                                 <include reference="mb3-yQ-I1j"/>
-                                <include reference="oCG-Vk-mw3"/>
                                 <include reference="3Ms-mO-THW"/>
                                 <include reference="m9e-Xa-W7a"/>
                                 <include reference="5pz-jj-nYh"/>
                                 <include reference="alN-10-qeH"/>
+                                <include reference="oCG-Vk-mw3"/>
+                                <include reference="jli-yv-Gpe"/>
                                 <include reference="EF9-Nt-Wb9"/>
                                 <include reference="LdV-KI-jN3"/>
                                 <include reference="ju2-r7-cRM"/>
                                 <include reference="XcH-xg-Hka"/>
-                                <include reference="jli-yv-Gpe"/>
                                 <include reference="aFT-5e-hX9"/>
                                 <include reference="dTT-6t-Itv"/>
                                 <include reference="g46-M4-hRu"/>
@@ -887,6 +924,15 @@
                         <outlet property="endTimePickerView" destination="E7R-kT-9FR" id="M7e-tW-JdL"/>
                         <outlet property="startDatePickerView" destination="uLO-bs-v8r" id="W9E-4c-tSc"/>
                         <outlet property="startTimePickerView" destination="Hbc-0y-1k3" id="yLW-9h-xnE"/>
+                        <outlet property="tutorLecturesLec1Outlet" destination="YwC-f4-hYf" id="9HI-eL-Mlc"/>
+                        <outlet property="tutorSetLectureCancelOutlet" destination="VzO-nP-tZV" id="AgP-S5-8kT"/>
+                        <outlet property="tutorSetLectureCreteOutlet" destination="xx9-qU-NVF" id="FnQ-Tq-5gu"/>
+                        <outlet property="tutorSetLectureLec2Outlet" destination="hwi-Bc-Q6d" id="Lrg-M8-pd7"/>
+                        <outlet property="tutorSetLectureLec3Outlet" destination="Was-kr-Efl" id="P8L-hI-TWf"/>
+                        <outlet property="tutorSetLectureLec4Outlet" destination="OTr-ch-ezB" id="I9L-Z8-G7r"/>
+                        <outlet property="tutorSetLectureLec5Outlet" destination="MGm-Pg-9SB" id="EO8-8S-kko"/>
+                        <outlet property="tutorSetLectureModuleOutlet" destination="tBN-6h-cIq" id="ilr-im-S6U"/>
+                        <outlet property="tutorSetLectureTitleOutlet" destination="b6P-Fj-3Rm" id="7EV-eg-An5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DnL-B9-TDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -906,7 +952,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNZ-Fx-ONu">
-                                <rect key="frame" x="288.5" y="28" width="191" height="36"/>
+                                <rect key="frame" x="289" y="28" width="191" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -915,6 +961,7 @@
                                 <rect key="frame" x="368" y="986" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="tutorStatusNextAction:" destination="9xR-Xk-1pM" eventType="touchUpInside" id="OIv-Ul-44q"/>
                                     <segue destination="bF1-AN-DLT" kind="presentation" id="rPe-Jp-teh"/>
                                 </connections>
                             </button>
@@ -925,19 +972,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-53-QqN">
-                                <rect key="frame" x="344" y="608" width="80.5" height="21"/>
+                                <rect key="frame" x="344" y="608" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDI-Th-5Gt">
-                                <rect key="frame" x="346.5" y="478" width="75" height="21"/>
+                                <rect key="frame" x="346" y="478" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SC9-bp-fIm">
-                                <rect key="frame" x="20" y="103" width="49.5" height="21"/>
+                                <rect key="frame" x="20" y="103" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -980,10 +1027,10 @@
                                 <exclude reference="zkX-ap-zkR"/>
                                 <exclude reference="7eL-Ve-WSF"/>
                                 <exclude reference="GbK-M7-qBF"/>
-                                <exclude reference="j2L-UE-Nh4"/>
-                                <exclude reference="ooL-Fh-w7u"/>
                                 <exclude reference="b8D-CZ-5lG"/>
                                 <exclude reference="e4I-A6-rFO"/>
+                                <exclude reference="j2L-UE-Nh4"/>
+                                <exclude reference="ooL-Fh-w7u"/>
                                 <exclude reference="D6W-6W-Vwi"/>
                                 <exclude reference="Y2g-bz-AYH"/>
                                 <exclude reference="DfX-My-VC3"/>
@@ -1007,10 +1054,10 @@
                                 <include reference="zkX-ap-zkR"/>
                                 <include reference="7eL-Ve-WSF"/>
                                 <include reference="GbK-M7-qBF"/>
-                                <include reference="j2L-UE-Nh4"/>
-                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="b8D-CZ-5lG"/>
                                 <include reference="e4I-A6-rFO"/>
+                                <include reference="j2L-UE-Nh4"/>
+                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="D6W-6W-Vwi"/>
                                 <include reference="Y2g-bz-AYH"/>
                                 <include reference="DfX-My-VC3"/>
@@ -1034,10 +1081,10 @@
                                 <include reference="zkX-ap-zkR"/>
                                 <include reference="7eL-Ve-WSF"/>
                                 <include reference="GbK-M7-qBF"/>
-                                <include reference="j2L-UE-Nh4"/>
-                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="b8D-CZ-5lG"/>
                                 <include reference="e4I-A6-rFO"/>
+                                <include reference="j2L-UE-Nh4"/>
+                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="D6W-6W-Vwi"/>
                                 <include reference="Y2g-bz-AYH"/>
                                 <include reference="DfX-My-VC3"/>
@@ -1061,10 +1108,10 @@
                                 <include reference="zkX-ap-zkR"/>
                                 <include reference="7eL-Ve-WSF"/>
                                 <include reference="GbK-M7-qBF"/>
-                                <include reference="j2L-UE-Nh4"/>
-                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="b8D-CZ-5lG"/>
                                 <include reference="e4I-A6-rFO"/>
+                                <include reference="j2L-UE-Nh4"/>
+                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="D6W-6W-Vwi"/>
                                 <include reference="Y2g-bz-AYH"/>
                                 <include reference="DfX-My-VC3"/>
@@ -1075,6 +1122,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="tutorStatusNextOutlet" destination="ceH-ta-EXD" id="IJa-8x-cgS"/>
+                        <outlet property="tutorStatusSessionIdOutlet" destination="ksS-U0-7ll" id="eLR-JR-qGS"/>
+                        <outlet property="tutorStatusStatusIdOutlet" destination="5sU-Xq-Ohq" id="QpO-Sh-PQF"/>
+                        <outlet property="tutorStatusStatusOutlet" destination="SC9-bp-fIm" id="4an-5l-ILR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsv-ON-5Sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1096,6 +1149,7 @@
                                 <rect key="frame" x="363.5" y="974" width="41" height="30"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
+                                    <action selector="tutorReveiwHomeAction:" destination="bF1-AN-DLT" eventType="touchUpInside" id="XvV-E6-2mo"/>
                                     <segue destination="ufv-Nf-glt" kind="presentation" id="ILt-lT-fRK"/>
                                 </connections>
                             </button>
@@ -1142,6 +1196,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="tutorReviewHomeOutlet" destination="gHy-Vc-WrH" id="SfH-42-q6g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHo-hu-pid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1175,6 +1232,7 @@
                                 <rect key="frame" x="368" y="974" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="studentLectureNextAction:" destination="FFr-B7-ubx" eventType="touchUpInside" id="a7m-p4-QbB"/>
                                     <segue destination="iWn-of-YzE" kind="presentation" id="wEq-am-ggp"/>
                                 </connections>
                             </button>
@@ -1196,6 +1254,7 @@
                                 <exclude reference="7gl-0p-IDe"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Uop-k5-Ods"/>
                                 <exclude reference="6nL-nE-AYK"/>
                                 <exclude reference="B0G-Zu-pf1"/>
                                 <exclude reference="rtJ-df-HCr"/>
@@ -1203,7 +1262,6 @@
                                 <exclude reference="WeE-Qe-lti"/>
                                 <exclude reference="qhH-xr-UNC"/>
                                 <exclude reference="DcB-ha-Xuu"/>
-                                <exclude reference="Uop-k5-Ods"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -1212,6 +1270,7 @@
                                 <include reference="7gl-0p-IDe"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Uop-k5-Ods"/>
                                 <include reference="6nL-nE-AYK"/>
                                 <include reference="B0G-Zu-pf1"/>
                                 <include reference="rtJ-df-HCr"/>
@@ -1219,7 +1278,6 @@
                                 <include reference="WeE-Qe-lti"/>
                                 <include reference="qhH-xr-UNC"/>
                                 <include reference="DcB-ha-Xuu"/>
-                                <include reference="Uop-k5-Ods"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1228,6 +1286,7 @@
                                 <include reference="7gl-0p-IDe"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Uop-k5-Ods"/>
                                 <include reference="6nL-nE-AYK"/>
                                 <include reference="B0G-Zu-pf1"/>
                                 <include reference="rtJ-df-HCr"/>
@@ -1235,7 +1294,6 @@
                                 <include reference="WeE-Qe-lti"/>
                                 <include reference="qhH-xr-UNC"/>
                                 <include reference="DcB-ha-Xuu"/>
-                                <include reference="Uop-k5-Ods"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -1244,6 +1302,7 @@
                                 <include reference="7gl-0p-IDe"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Uop-k5-Ods"/>
                                 <include reference="6nL-nE-AYK"/>
                                 <include reference="B0G-Zu-pf1"/>
                                 <include reference="rtJ-df-HCr"/>
@@ -1251,10 +1310,12 @@
                                 <include reference="WeE-Qe-lti"/>
                                 <include reference="qhH-xr-UNC"/>
                                 <include reference="DcB-ha-Xuu"/>
-                                <include reference="Uop-k5-Ods"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="studentLectureNextOutlet" destination="LWs-8C-KuC" id="Xm8-Ea-S7q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBR-Wg-heT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1276,6 +1337,7 @@
                                 <rect key="frame" x="359.5" y="974" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
+                                    <action selector="studentReviewSubmitAction:" destination="iWn-of-YzE" eventType="touchUpInside" id="Yaj-16-15c"/>
                                     <segue destination="9KN-Cl-dz1" kind="presentation" id="skU-QS-ia9"/>
                                 </connections>
                             </button>
@@ -1322,6 +1384,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="studentReviewSubmitOutlet" destination="MEg-rm-jxQ" id="tkg-fw-0pl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5O-AM-BBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1329,9 +1394,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mIP-jQ-LrV"/>
-        <segue reference="JvZ-pu-7Eg"/>
         <segue reference="bw2-4I-Goi"/>
+        <segue reference="ILt-lT-fRK"/>
+        <segue reference="mIP-jQ-LrV"/>
         <segue reference="TyN-hs-RTs"/>
     </inferredMetricsTieBreakers>
 </document>

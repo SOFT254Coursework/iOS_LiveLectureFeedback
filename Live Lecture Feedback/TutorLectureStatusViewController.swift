@@ -10,6 +10,12 @@ import UIKit
 
 class TutorLectureStatusViewController: UIViewController {
 
+    @IBOutlet weak var tutorStatusStatusOutlet: UILabel!
+    @IBOutlet weak var tutorStatusStatusIdOutlet: UILabel!
+    @IBOutlet weak var tutorStatusSessionIdOutlet: UILabel!
+    
+    @IBOutlet weak var tutorStatusNextOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +27,8 @@ class TutorLectureStatusViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func tutorStatusNextAction(_ sender: Any) {
+    }
 
     /*
     // MARK: - Navigation

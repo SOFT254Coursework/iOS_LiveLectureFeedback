@@ -10,6 +10,8 @@ import UIKit
 
 class TutorLectureReviewViewController: UIViewController {
 
+    @IBOutlet weak var tutorReviewHomeOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,8 @@ class TutorLectureReviewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func tutorReveiwHomeAction(_ sender: Any) {
+    }
 
     /*
     // MARK: - Navigation

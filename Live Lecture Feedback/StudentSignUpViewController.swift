@@ -10,6 +10,10 @@ import UIKit
 
 class StudentSignUpViewController: UIViewController {
 
+    @IBOutlet weak var studentSessionIdOutlet: UITextField!
+    @IBOutlet weak var studentSessionSubmitOutlet: UIButton!
+    @IBOutlet weak var studentSessionExitOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,13 @@ class StudentSignUpViewController: UIViewController {
     }
     
 
+    @IBAction func studentSessionSubmitAction(_ sender: Any) {
+    }
+    
+    @IBAction func studentSessionExitAction(_ sender: Any) {
+    }
+    
+    
     /*
     // MARK: - Navigation
 

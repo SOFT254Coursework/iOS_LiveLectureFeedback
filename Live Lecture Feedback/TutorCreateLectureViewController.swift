@@ -22,6 +22,17 @@ class TutorCreateLectureViewController: UIViewController, UIPickerViewDelegate, 
     @IBOutlet weak var startTimePickerView: UIPickerView!
     @IBOutlet weak var endTimePickerView: UIPickerView!
     
+    @IBOutlet weak var tutorSetLectureCancelOutlet: UIButton!
+    @IBOutlet weak var tutorSetLectureCreteOutlet: UIButton!
+    @IBOutlet weak var tutorSetLectureModuleOutlet: UITextField!
+    @IBOutlet weak var tutorSetLectureTitleOutlet: UITextField!
+    
+    @IBOutlet weak var tutorLecturesLec1Outlet: UIButton!
+    @IBOutlet weak var tutorSetLectureLec2Outlet: UIButton!
+    @IBOutlet weak var tutorSetLectureLec3Outlet: UIButton!
+    @IBOutlet weak var tutorSetLectureLec4Outlet: UIButton!
+    @IBOutlet weak var tutorSetLectureLec5Outlet: UIButton!
+    
     override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -96,7 +107,27 @@ class TutorCreateLectureViewController: UIViewController, UIPickerViewDelegate, 
         }
     }
     
+    @IBAction func tutorSetLectureCancelAction(_ sender: Any) {
+    }
 
+    @IBAction func tutorSetLectureCreateAction(_ sender: Any) {
+    }
+    
+    @IBAction func tutorSetLectureLec1Action(_ sender: Any) {
+    }
+    
+    @IBAction func tutorSetLectureLec2Action(_ sender: Any) {
+    }
+    
+    @IBAction func tutorSetLectureLec3Action(_ sender: Any) {
+    }
+    
+    @IBAction func tutorSetLectureLec4Action(_ sender: Any) {
+    }
+    
+    @IBAction func tutorSetLectureLec5Action(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

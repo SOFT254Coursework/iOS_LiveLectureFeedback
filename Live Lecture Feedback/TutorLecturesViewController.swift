@@ -10,6 +10,9 @@ import UIKit
 
 class TutorLecturesViewController: UIViewController {
 
+    @IBOutlet weak var tutorLecturesExitOutlet: UIButton!
+    @IBOutlet weak var tutorLecturesCreateOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +24,12 @@ class TutorLecturesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func tutorsLecturesExitAction(_ sender: Any) {
+    }
 
+    @IBAction func tutorLecturesCreateAction(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

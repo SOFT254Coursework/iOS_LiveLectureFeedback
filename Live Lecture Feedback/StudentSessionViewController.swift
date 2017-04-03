@@ -10,6 +10,7 @@ import UIKit
 
 class StudentSessionViewController: UIViewController {
 
+    @IBOutlet weak var studentLectureNextOutlet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,8 @@ class StudentSessionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func studentLectureNextAction(_ sender: Any) {
+    }
 
     /*
     // MARK: - Navigation

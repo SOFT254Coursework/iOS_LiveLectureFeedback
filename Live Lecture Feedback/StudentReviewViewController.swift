@@ -10,6 +10,8 @@ import UIKit
 
 class StudentReviewViewController: UIViewController {
 
+    @IBOutlet weak var studentReviewSubmitOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,9 @@ class StudentReviewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func studentReviewSubmitAction(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
