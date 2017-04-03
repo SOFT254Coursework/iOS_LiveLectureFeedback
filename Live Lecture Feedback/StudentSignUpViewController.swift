@@ -9,6 +9,8 @@
 import UIKit
 
 class StudentSignUpViewController: UIViewController {
+    
+    var sSessionId : String?
 
     @IBOutlet weak var studentSessionIdOutlet: UITextField!
     @IBOutlet weak var studentSessionSubmitOutlet: UIButton!

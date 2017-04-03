@@ -17,6 +17,22 @@ class TutorCreateLectureViewController: UIViewController, UIPickerViewDelegate, 
     let listOfHours = Array(9...18)
     let listOfMinutes = [00, 15, 30, 45]
     
+    var tModuleCode : String?
+    var tLectureTitle : String?
+    var tNumberSessions : Int?
+    
+    var tStartDay : Int?
+    var tStartMonth : String?
+    var tStartYear : Int?
+    var tStartHour : Int?
+    var tStartMinutes : Int?
+    
+    var tEndDay : Int?
+    var tEndMonth : String?
+    var tEndYear : Int?
+    var tEndHour : Int?
+    var tEndMinutes : Int?
+    
     @IBOutlet weak var startDatePickerView: UIPickerView!
     @IBOutlet weak var endDatePickerView: UIPickerView!
     @IBOutlet weak var startTimePickerView: UIPickerView!
