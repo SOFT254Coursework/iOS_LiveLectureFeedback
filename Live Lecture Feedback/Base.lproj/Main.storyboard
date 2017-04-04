@@ -59,14 +59,14 @@
                                 <rect key="frame" x="356.5" y="697" width="55" height="30"/>
                                 <state key="normal" title="Student"/>
                                 <connections>
-                                    <segue destination="9KN-Cl-dz1" kind="presentation" id="TyN-hs-RTs"/>
+                                    <segue destination="LI1-V0-VG9" kind="presentation" id="TyN-hs-RTs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuj-2V-2BU">
                                 <rect key="frame" x="366" y="774" width="36" height="30"/>
                                 <state key="normal" title="Tutor"/>
                                 <connections>
-                                    <segue destination="ufv-Nf-glt" kind="presentation" id="7NL-jI-JOd"/>
+                                    <segue destination="Frx-ti-e6h" kind="presentation" id="7NL-jI-JOd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -254,7 +254,7 @@
                                 <rect key="frame" x="359.5" y="625" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="FFr-B7-ubx" kind="presentation" id="2gV-si-XbN"/>
+                                    <segue destination="hKQ-ak-qLP" kind="presentation" id="2gV-si-XbN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJJ-cH-Nf5">
@@ -262,7 +262,6 @@
                                 <state key="normal" title="Exit"/>
                                 <connections>
                                     <action selector="studentSessionExitAction:" destination="9KN-Cl-dz1" eventType="touchUpInside" id="fUy-11-SE2"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="RqF-5e-eTv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -360,6 +359,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="hTk-uQ-Tvy"/>
                     <connections>
                         <outlet property="studentSessionExitOutlet" destination="CJJ-cH-Nf5" id="LZ8-ww-nsI"/>
                         <outlet property="studentSessionIdOutlet" destination="M2S-Df-CVS" id="BcR-6K-m5d"/>
@@ -368,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGw-sY-Dcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827.536231884058" y="136.95652173913044"/>
+            <point key="canvasLocation" x="1592.96875" y="136.5234375"/>
         </scene>
         <!--Tutor Lectures View Controller-->
         <scene sceneID="JSe-rn-JUL">
@@ -392,7 +392,7 @@
                                 <rect key="frame" x="368" y="974" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="9xR-Xk-1pM" kind="presentation" id="ixA-GI-KnS"/>
+                                    <segue destination="JDS-L0-m48" kind="presentation" id="ixA-GI-KnS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87X-hu-TZP">
@@ -400,7 +400,7 @@
                                 <state key="normal" title="Create"/>
                                 <connections>
                                     <action selector="tutorLecturesCreateAction:" destination="ufv-Nf-glt" eventType="touchUpInside" id="JyN-5a-k9t"/>
-                                    <segue destination="zaA-pt-0IY" kind="presentation" id="9UK-gO-8S8"/>
+                                    <segue destination="YIv-Oc-TGY" kind="presentation" id="9UK-gO-8S8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfw-Cq-4q7">
@@ -496,6 +496,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="gvg-VH-rZd"/>
                     <connections>
                         <outlet property="tutorLecturesCreateOutlet" destination="87X-hu-TZP" id="fV7-ML-Bu7"/>
                         <outlet property="tutorLecturesExitOutlet" destination="jfw-Cq-4q7" id="3Gx-P2-cyn"/>
@@ -503,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udn-lu-foc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="849"/>
+            <point key="canvasLocation" x="1592.96875" y="848.4375"/>
         </scene>
         <!--Tutor Create Lecture View Controller-->
         <scene sceneID="Rkr-Br-cSu">
@@ -522,7 +523,7 @@
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="tutorSetLectureCancelAction:" destination="zaA-pt-0IY" eventType="touchUpInside" id="PE8-JE-Nnx"/>
-                                    <segue destination="ufv-Nf-glt" kind="presentation" id="JvZ-pu-7Eg"/>
+                                    <segue destination="Frx-ti-e6h" kind="presentation" id="JvZ-pu-7Eg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xx9-qU-NVF">
@@ -530,7 +531,7 @@
                                 <state key="normal" title="Create Event"/>
                                 <connections>
                                     <action selector="tutorSetLectureCreateAction:" destination="zaA-pt-0IY" eventType="touchUpInside" id="jNF-aC-q0T"/>
-                                    <segue destination="9xR-Xk-1pM" kind="presentation" id="mIP-jQ-LrV"/>
+                                    <segue destination="JDS-L0-m48" kind="presentation" id="mIP-jQ-LrV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Module" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mi1-qs-sdS">
@@ -919,6 +920,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="EjM-mK-Zor"/>
                     <connections>
                         <outlet property="endDatePickerView" destination="bMm-1n-Fpo" id="8Sg-Zy-3zf"/>
                         <outlet property="endTimePickerView" destination="E7R-kT-9FR" id="M7e-tW-JdL"/>
@@ -937,7 +939,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DnL-B9-TDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="850"/>
+            <point key="canvasLocation" x="3156.25" y="849.609375"/>
         </scene>
         <!--Tutor Lecture Status View Controller-->
         <scene sceneID="MkB-yA-uzh">
@@ -952,7 +954,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNZ-Fx-ONu">
-                                <rect key="frame" x="289" y="28" width="191" height="36"/>
+                                <rect key="frame" x="288.5" y="28" width="191" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -962,7 +964,7 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="tutorStatusNextAction:" destination="9xR-Xk-1pM" eventType="touchUpInside" id="OIv-Ul-44q"/>
-                                    <segue destination="bF1-AN-DLT" kind="presentation" id="rPe-Jp-teh"/>
+                                    <segue destination="5qA-oc-0Km" kind="presentation" id="rPe-Jp-teh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abc123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksS-U0-7ll">
@@ -1122,6 +1124,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Dl1-2B-IdN"/>
                     <connections>
                         <outlet property="tutorStatusNextOutlet" destination="ceH-ta-EXD" id="IJa-8x-cgS"/>
                         <outlet property="tutorStatusSessionIdOutlet" destination="ksS-U0-7ll" id="eLR-JR-qGS"/>
@@ -1131,7 +1134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsv-ON-5Sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2377" y="851"/>
+            <point key="canvasLocation" x="4673.4375" y="850.78125"/>
         </scene>
         <!--Tutor Lecture Review View Controller-->
         <scene sceneID="fjn-1z-KAf">
@@ -1150,7 +1153,7 @@
                                 <state key="normal" title="Home"/>
                                 <connections>
                                     <action selector="tutorReveiwHomeAction:" destination="bF1-AN-DLT" eventType="touchUpInside" id="XvV-E6-2mo"/>
-                                    <segue destination="ufv-Nf-glt" kind="presentation" id="ILt-lT-fRK"/>
+                                    <segue destination="Frx-ti-e6h" kind="presentation" id="ILt-lT-fRK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1196,13 +1199,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="XYG-hg-VbT"/>
                     <connections>
                         <outlet property="tutorReviewHomeOutlet" destination="gHy-Vc-WrH" id="SfH-42-q6g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHo-hu-pid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3164" y="849"/>
+            <point key="canvasLocation" x="6225.78125" y="848.4375"/>
         </scene>
         <!--Student Session View Controller-->
         <scene sceneID="5Lz-ZP-23m">
@@ -1233,7 +1237,7 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="studentLectureNextAction:" destination="FFr-B7-ubx" eventType="touchUpInside" id="a7m-p4-QbB"/>
-                                    <segue destination="iWn-of-YzE" kind="presentation" id="wEq-am-ggp"/>
+                                    <segue destination="yO4-l6-Esu" kind="presentation" id="wEq-am-ggp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1313,13 +1317,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="b8D-Lt-8R6"/>
                     <connections>
                         <outlet property="studentLectureNextOutlet" destination="LWs-8C-KuC" id="Xm8-Ea-S7q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBR-Wg-heT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="137"/>
+            <point key="canvasLocation" x="3156.25" y="136.5234375"/>
         </scene>
         <!--Student Review View Controller-->
         <scene sceneID="Xf5-EB-VgR">
@@ -1338,7 +1343,7 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="studentReviewSubmitAction:" destination="iWn-of-YzE" eventType="touchUpInside" id="Yaj-16-15c"/>
-                                    <segue destination="9KN-Cl-dz1" kind="presentation" id="skU-QS-ia9"/>
+                                    <segue destination="LI1-V0-VG9" kind="presentation" id="skU-QS-ia9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1384,19 +1389,145 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="cbO-Uu-x0D"/>
                     <connections>
                         <outlet property="studentReviewSubmitOutlet" destination="MEg-rm-jxQ" id="tkg-fw-0pl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5O-AM-BBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2378" y="137"/>
+            <point key="canvasLocation" x="4674.21875" y="136.5234375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5DZ-co-GQH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LI1-V0-VG9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YDi-UU-m1O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9KN-Cl-dz1" kind="relationship" relationship="rootViewController" id="vr1-hR-bq8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2r6-v6-C4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="827.34375" y="136.5234375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bjI-GB-GCS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hKQ-ak-qLP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ahI-ay-W9w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FFr-B7-ubx" kind="relationship" relationship="rootViewController" id="b2f-Lt-CQw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACH-6W-SHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2390.625" y="136.5234375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8bz-V9-Eac">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yO4-l6-Esu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GTF-sY-fzh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iWn-of-YzE" kind="relationship" relationship="rootViewController" id="mS0-ZL-uKo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jBd-dD-kC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3908.59375" y="136.5234375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="odD-IT-tJA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Frx-ti-e6h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CJW-0i-gQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ufv-Nf-glt" kind="relationship" relationship="rootViewController" id="TXt-wB-iWk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pC9-eG-O9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="827.34375" y="848.4375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="no5-w6-ozM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YIv-Oc-TGY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xin-Xm-CU4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zaA-pt-0IY" kind="relationship" relationship="rootViewController" id="kRO-Xb-0yV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xO-ob-crF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2390.625" y="849.609375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QnG-la-kdP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JDS-L0-m48" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3I2-XD-g0O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9xR-Xk-1pM" kind="relationship" relationship="rootViewController" id="voF-Mx-iGO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WJN-L3-EVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3907.8125" y="850.78125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y8L-BT-GKt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5qA-oc-0Km" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cmb-ho-UCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bF1-AN-DLT" kind="relationship" relationship="rootViewController" id="UfN-5k-x54"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5G-Dy-nRH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5460.15625" y="848.4375"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bw2-4I-Goi"/>
         <segue reference="ILt-lT-fRK"/>
         <segue reference="mIP-jQ-LrV"/>
-        <segue reference="TyN-hs-RTs"/>
+        <segue reference="skU-QS-ia9"/>
     </inferredMetricsTieBreakers>
 </document>
