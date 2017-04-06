@@ -859,7 +859,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHy-Vc-WrH">
-                                <rect key="frame" x="347.5" y="364" width="41" height="30"/>
+                                <rect key="frame" x="219.5" y="270" width="41" height="30"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
                                     <action selector="tutorReveiwHomeAction:" destination="bF1-AN-DLT" eventType="touchUpInside" id="XvV-E6-2mo"/>
@@ -879,6 +879,15 @@
                             <mask key="constraints">
                                 <exclude reference="a5Z-iK-MNB"/>
                                 <exclude reference="whs-fb-rA2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="gHy-Vc-WrH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="a5Z-iK-MNB"/>
+                                <include reference="whs-fb-rA2"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -1248,7 +1257,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7NL-jI-JOd"/>
+        <segue reference="ILt-lT-fRK"/>
         <segue reference="TyN-hs-RTs"/>
     </inferredMetricsTieBreakers>
 </document>
