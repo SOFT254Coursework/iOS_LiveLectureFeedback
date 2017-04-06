@@ -426,7 +426,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="hTk-uQ-Tvy">
-                        <barButtonItem key="leftBarButtonItem" title="Exit" id="QoV-CW-5Or"/>
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="QoV-CW-5Or">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="Dj2-9O-ot8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="studentSessionIdOutlet" destination="M2S-Df-CVS" id="BcR-6K-m5d"/>
@@ -435,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGw-sY-Dcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.96875" y="136.5234375"/>
+            <point key="canvasLocation" x="1330" y="137"/>
         </scene>
         <!--Tutor Lectures View Controller-->
         <scene sceneID="JSe-rn-JUL">
@@ -446,24 +450,24 @@
                         <viewControllerLayoutGuide type="bottom" id="zBe-SN-6ji"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QIb-yM-Nhb">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lectures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4U-fI-h3g">
-                                <rect key="frame" x="334" y="72" width="100" height="31.5"/>
+                                <rect key="frame" x="633" y="72" width="100" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze9-Kv-99y">
-                                <rect key="frame" x="368" y="974" width="32" height="30"/>
+                                <rect key="frame" x="667" y="974" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="JDS-L0-m48" kind="presentation" id="ixA-GI-KnS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87X-hu-TZP">
-                                <rect key="frame" x="361" y="888" width="46" height="30"/>
+                                <rect key="frame" x="660" y="888" width="46" height="30"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
                                     <action selector="tutorLecturesCreateAction:" destination="ufv-Nf-glt" eventType="touchUpInside" id="JyN-5a-k9t"/>
@@ -471,7 +475,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfw-Cq-4q7">
-                                <rect key="frame" x="369" y="816" width="30" height="30"/>
+                                <rect key="frame" x="668" y="816" width="30" height="30"/>
                                 <state key="normal" title="Exit"/>
                                 <connections>
                                     <action selector="tutorsLecturesExitAction:" destination="ufv-Nf-glt" eventType="touchUpInside" id="igf-AH-IOK"/>
@@ -604,17 +608,17 @@
                         <viewControllerLayoutGuide type="bottom" id="lvc-tv-bm4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KZ8-t3-bLN">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNZ-Fx-ONu">
-                                <rect key="frame" x="288.5" y="72" width="191" height="36"/>
+                                <rect key="frame" x="587.5" y="72" width="191" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceH-ta-EXD">
-                                <rect key="frame" x="368" y="986" width="32" height="30"/>
+                                <rect key="frame" x="667" y="986" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="tutorStatusNextAction:" destination="9xR-Xk-1pM" eventType="touchUpInside" id="OIv-Ul-44q"/>
@@ -622,19 +626,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abc123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksS-U0-7ll">
-                                <rect key="frame" x="356" y="681" width="56" height="21"/>
+                                <rect key="frame" x="655" y="681" width="56" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-53-QqN">
-                                <rect key="frame" x="344" y="652" width="81" height="21"/>
+                                <rect key="frame" x="643" y="652" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDI-Th-5Gt">
-                                <rect key="frame" x="346" y="522" width="76" height="21"/>
+                                <rect key="frame" x="645" y="522" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -833,11 +837,11 @@
                         <viewControllerLayoutGuide type="bottom" id="sea-ga-dUq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="G6N-MZ-XQl">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHy-Vc-WrH">
-                                <rect key="frame" x="363.5" y="974" width="41" height="30"/>
+                                <rect key="frame" x="662.5" y="974" width="41" height="30"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
                                     <action selector="tutorReveiwHomeAction:" destination="bF1-AN-DLT" eventType="touchUpInside" id="XvV-E6-2mo"/>
@@ -1020,7 +1024,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBR-Wg-heT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3156.25" y="136.5234375"/>
+            <point key="canvasLocation" x="2692" y="137"/>
         </scene>
         <!--Tutor Create Lecture View Controller-->
         <scene sceneID="tE4-3d-R2n">
@@ -1031,7 +1035,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6w6-by-pit"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bp5-sW-vPo">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1052,75 +1056,19 @@
                     <view key="view" contentMode="scaleToFill" id="rcg-0Q-B6i">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEg-rm-jxQ">
-                                <rect key="frame" x="658.5" y="974" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="studentReviewSubmitAction:" destination="iWn-of-YzE" eventType="touchUpInside" id="Yaj-16-15c"/>
-                                    <segue destination="LI1-V0-VG9" kind="presentation" id="skU-QS-ia9"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="fEf-FV-CkZ" firstAttribute="top" secondItem="MEg-rm-jxQ" secondAttribute="bottom" constant="20" id="FNM-2M-rhT"/>
-                            <constraint firstItem="MEg-rm-jxQ" firstAttribute="centerX" secondItem="rcg-0Q-B6i" secondAttribute="centerX" id="ofv-5k-dOe"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="MEg-rm-jxQ"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="FNM-2M-rhT"/>
-                                <exclude reference="ofv-5k-dOe"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="MEg-rm-jxQ"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="FNM-2M-rhT"/>
-                                <include reference="ofv-5k-dOe"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="MEg-rm-jxQ"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="FNM-2M-rhT"/>
-                                <include reference="ofv-5k-dOe"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="MEg-rm-jxQ"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="FNM-2M-rhT"/>
-                                <include reference="ofv-5k-dOe"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="MEg-rm-jxQ"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="FNM-2M-rhT"/>
-                                <include reference="ofv-5k-dOe"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="cbO-Uu-x0D"/>
-                    <connections>
-                        <outlet property="studentReviewSubmitOutlet" destination="MEg-rm-jxQ" id="tkg-fw-0pl"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="cbO-Uu-x0D">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="efc-gM-oEv">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="VPA-do-MOR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5O-AM-BBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4674.21875" y="136.5234375"/>
+            <point key="canvasLocation" x="4065" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5DZ-co-GQH">
@@ -1138,7 +1086,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2r6-v6-C4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="137"/>
+            <point key="canvasLocation" x="706" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bjI-GB-GCS">
@@ -1156,7 +1104,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ACH-6W-SHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2390.625" y="136.5234375"/>
+            <point key="canvasLocation" x="1995" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8bz-V9-Eac">
@@ -1174,7 +1122,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBd-dD-kC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3908.59375" y="136.5234375"/>
+            <point key="canvasLocation" x="3376" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="odD-IT-tJA">
@@ -1251,6 +1199,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ILt-lT-fRK"/>
-        <segue reference="TyN-hs-RTs"/>
+        <segue reference="Dj2-9O-ot8"/>
     </inferredMetricsTieBreakers>
 </document>
