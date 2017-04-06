@@ -297,26 +297,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M2S-Df-CVS">
-                                <rect key="frame" x="116.5" y="170" width="87" height="30"/>
+                                <rect key="frame" x="143.5" y="145" width="193" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfL-Bz-nkg">
-                                <rect key="frame" x="5.5" y="170" width="81" height="30"/>
+                                <rect key="frame" x="22.5" y="145" width="81" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJJ-cH-Nf5">
-                                <rect key="frame" x="145" y="430" width="30" height="30"/>
+                                <rect key="frame" x="225" y="270" width="30" height="30"/>
                                 <state key="normal" title="Exit"/>
                                 <connections>
                                     <action selector="studentSessionExitAction:" destination="9KN-Cl-dz1" eventType="touchUpInside" id="fUy-11-SE2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFx-Vu-iVa">
-                                <rect key="frame" x="135.5" y="220" width="49" height="30"/>
+                                <rect key="frame" x="215.5" y="220" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <segue destination="hKQ-ak-qLP" kind="presentation" id="2gV-si-XbN"/>
@@ -327,17 +327,22 @@
                         <constraints>
                             <constraint firstItem="M2S-Df-CVS" firstAttribute="centerX" secondItem="0a2-OZ-3yU" secondAttribute="centerX" id="5nw-cL-Q5v"/>
                             <constraint firstAttribute="trailingMargin" secondItem="M2S-Df-CVS" secondAttribute="trailing" multiplier="1.1" constant="200" id="Cud-yK-3Zb">
+                                <variation key="heightClass=compact-widthClass=compact" constant="90"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="80"/>
                             </constraint>
                             <constraint firstItem="CJJ-cH-Nf5" firstAttribute="centerX" secondItem="0a2-OZ-3yU" secondAttribute="centerX" id="FKJ-ZM-dfW"/>
                             <constraint firstItem="nfL-Bz-nkg" firstAttribute="centerY" secondItem="M2S-Df-CVS" secondAttribute="centerY" id="IIA-Aw-yiD"/>
                             <constraint firstItem="CJJ-cH-Nf5" firstAttribute="top" secondItem="cFx-Vu-iVa" secondAttribute="bottom" constant="397" id="Rnh-m3-CPO">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="95"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="180"/>
                             </constraint>
                             <constraint firstItem="nfL-Bz-nkg" firstAttribute="height" secondItem="M2S-Df-CVS" secondAttribute="height" id="TVD-lu-3o8"/>
-                            <constraint firstItem="cFx-Vu-iVa" firstAttribute="top" secondItem="M2S-Df-CVS" secondAttribute="bottom" constant="20" id="ULB-ca-MXp"/>
+                            <constraint firstItem="cFx-Vu-iVa" firstAttribute="top" secondItem="M2S-Df-CVS" secondAttribute="bottom" constant="20" id="ULB-ca-MXp">
+                                <variation key="heightClass=compact-widthClass=compact" constant="45"/>
+                            </constraint>
                             <constraint firstItem="M2S-Df-CVS" firstAttribute="leading" secondItem="nfL-Bz-nkg" secondAttribute="trailing" constant="67.5" id="hQM-tZ-ecQ">
+                                <variation key="heightClass=compact-widthClass=compact" constant="40"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="cFx-Vu-iVa" firstAttribute="centerX" secondItem="0a2-OZ-3yU" secondAttribute="centerX" id="hb0-Pp-9M3"/>
@@ -361,6 +366,26 @@
                                 <exclude reference="hb0-Pp-9M3"/>
                                 <exclude reference="FKJ-ZM-dfW"/>
                                 <exclude reference="Rnh-m3-CPO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="M2S-Df-CVS"/>
+                                <include reference="nfL-Bz-nkg"/>
+                                <include reference="CJJ-cH-Nf5"/>
+                                <include reference="cFx-Vu-iVa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="sHv-3h-l1O"/>
+                                <include reference="IIA-Aw-yiD"/>
+                                <include reference="TVD-lu-3o8"/>
+                                <include reference="5nw-cL-Q5v"/>
+                                <include reference="Cud-yK-3Zb"/>
+                                <include reference="hQM-tZ-ecQ"/>
+                                <include reference="ULB-ca-MXp"/>
+                                <include reference="hb0-Pp-9M3"/>
+                                <include reference="FKJ-ZM-dfW"/>
+                                <include reference="Rnh-m3-CPO"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -1146,7 +1171,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ILt-lT-fRK"/>
+        <segue reference="7NL-jI-JOd"/>
         <segue reference="TyN-hs-RTs"/>
     </inferredMetricsTieBreakers>
 </document>
