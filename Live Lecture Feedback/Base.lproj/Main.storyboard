@@ -255,26 +255,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M2S-Df-CVS">
-                                <rect key="frame" x="128.66666666666669" y="426" width="156.66666666666669" height="30"/>
+                                <rect key="frame" x="267" y="189" width="202" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfL-Bz-nkg">
-                                <rect key="frame" x="17.666666666666671" y="426" width="81" height="30"/>
+                                <rect key="frame" x="118.33333333333334" y="189" width="81.000000000000028" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJJ-cH-Nf5">
-                                <rect key="frame" x="192" y="686" width="30" height="30"/>
+                                <rect key="frame" x="353" y="364" width="30" height="30"/>
                                 <state key="normal" title="Exit"/>
                                 <connections>
                                     <action selector="studentSessionExitAction:" destination="9KN-Cl-dz1" eventType="touchUpInside" id="fUy-11-SE2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFx-Vu-iVa">
-                                <rect key="frame" x="182.66666666666666" y="476" width="49" height="30"/>
+                                <rect key="frame" x="343.66666666666669" y="239" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <segue destination="hKQ-ak-qLP" kind="presentation" id="2gV-si-XbN"/>
@@ -290,6 +290,7 @@
                             <constraint firstItem="CJJ-cH-Nf5" firstAttribute="centerX" secondItem="0a2-OZ-3yU" secondAttribute="centerX" id="FKJ-ZM-dfW"/>
                             <constraint firstItem="nfL-Bz-nkg" firstAttribute="centerY" secondItem="M2S-Df-CVS" secondAttribute="centerY" id="IIA-Aw-yiD"/>
                             <constraint firstItem="CJJ-cH-Nf5" firstAttribute="top" secondItem="cFx-Vu-iVa" secondAttribute="bottom" constant="397" id="Rnh-m3-CPO">
+                                <variation key="heightClass=compact-widthClass=regular" constant="95"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="180"/>
                             </constraint>
                             <constraint firstItem="nfL-Bz-nkg" firstAttribute="height" secondItem="M2S-Df-CVS" secondAttribute="height" id="TVD-lu-3o8"/>
@@ -318,6 +319,26 @@
                                 <exclude reference="hb0-Pp-9M3"/>
                                 <exclude reference="FKJ-ZM-dfW"/>
                                 <exclude reference="Rnh-m3-CPO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="M2S-Df-CVS"/>
+                                <include reference="nfL-Bz-nkg"/>
+                                <include reference="CJJ-cH-Nf5"/>
+                                <include reference="cFx-Vu-iVa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="sHv-3h-l1O"/>
+                                <include reference="IIA-Aw-yiD"/>
+                                <include reference="TVD-lu-3o8"/>
+                                <include reference="5nw-cL-Q5v"/>
+                                <include reference="Cud-yK-3Zb"/>
+                                <include reference="hQM-tZ-ecQ"/>
+                                <include reference="ULB-ca-MXp"/>
+                                <include reference="hb0-Pp-9M3"/>
+                                <include reference="FKJ-ZM-dfW"/>
+                                <include reference="Rnh-m3-CPO"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
