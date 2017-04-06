@@ -752,71 +752,15 @@
                     <view key="view" contentMode="scaleToFill" id="G6N-MZ-XQl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHy-Vc-WrH">
-                                <rect key="frame" x="186.66666666666666" y="686" width="41" height="30"/>
-                                <state key="normal" title="Home"/>
-                                <connections>
-                                    <action selector="tutorReveiwHomeAction:" destination="bF1-AN-DLT" eventType="touchUpInside" id="XvV-E6-2mo"/>
-                                    <segue destination="Frx-ti-e6h" kind="presentation" id="ILt-lT-fRK"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="sea-ga-dUq" firstAttribute="top" secondItem="gHy-Vc-WrH" secondAttribute="bottom" constant="20" id="a5Z-iK-MNB"/>
-                            <constraint firstItem="gHy-Vc-WrH" firstAttribute="centerX" secondItem="G6N-MZ-XQl" secondAttribute="centerX" id="whs-fb-rA2"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="gHy-Vc-WrH"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="a5Z-iK-MNB"/>
-                                <exclude reference="whs-fb-rA2"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="gHy-Vc-WrH"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="a5Z-iK-MNB"/>
-                                <include reference="whs-fb-rA2"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="gHy-Vc-WrH"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="a5Z-iK-MNB"/>
-                                <include reference="whs-fb-rA2"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="gHy-Vc-WrH"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="a5Z-iK-MNB"/>
-                                <include reference="whs-fb-rA2"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="gHy-Vc-WrH"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="a5Z-iK-MNB"/>
-                                <include reference="whs-fb-rA2"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="XYG-hg-VbT"/>
-                    <connections>
-                        <outlet property="tutorReviewHomeOutlet" destination="gHy-Vc-WrH" id="SfH-42-q6g"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="XYG-hg-VbT">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="1sO-Ej-HaI">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="WuX-J9-xIE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHo-hu-pid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1122,8 +1066,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ILt-lT-fRK"/>
+        <segue reference="MZD-ty-dhz"/>
         <segue reference="hSd-vf-tLl"/>
-        <segue reference="Dj2-9O-ot8"/>
+        <segue reference="WuX-J9-xIE"/>
     </inferredMetricsTieBreakers>
 </document>
