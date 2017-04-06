@@ -878,7 +878,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEg-rm-jxQ">
-                                <rect key="frame" x="182.66666666666666" y="686" width="49" height="30"/>
+                                <rect key="frame" x="343.66666666666669" y="364" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="studentReviewSubmitAction:" destination="iWn-of-YzE" eventType="touchUpInside" id="Yaj-16-15c"/>
@@ -898,6 +898,15 @@
                             <mask key="constraints">
                                 <exclude reference="FNM-2M-rhT"/>
                                 <exclude reference="ofv-5k-dOe"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="MEg-rm-jxQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="FNM-2M-rhT"/>
+                                <include reference="ofv-5k-dOe"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
