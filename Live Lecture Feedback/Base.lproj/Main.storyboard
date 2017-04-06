@@ -473,27 +473,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lectures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4U-fI-h3g">
-                                <rect key="frame" x="318" y="72" width="100" height="31.5"/>
+                                <rect key="frame" x="190" y="72" width="100" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze9-Kv-99y">
-                                <rect key="frame" x="352" y="364" width="32" height="30"/>
+                                <rect key="frame" x="224" y="270" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="JDS-L0-m48" kind="presentation" id="ixA-GI-KnS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87X-hu-TZP">
-                                <rect key="frame" x="345" y="278" width="46" height="30"/>
+                                <rect key="frame" x="217" y="220" width="46" height="30"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
                                     <action selector="tutorLecturesCreateAction:" destination="ufv-Nf-glt" eventType="touchUpInside" id="JyN-5a-k9t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfw-Cq-4q7">
-                                <rect key="frame" x="353" y="206" width="30" height="30"/>
+                                <rect key="frame" x="225" y="170" width="30" height="30"/>
                                 <state key="normal" title="Exit"/>
                                 <connections>
                                     <action selector="tutorsLecturesExitAction:" destination="ufv-Nf-glt" eventType="touchUpInside" id="igf-AH-IOK"/>
@@ -505,12 +505,16 @@
                         <constraints>
                             <constraint firstItem="zBe-SN-6ji" firstAttribute="top" secondItem="ze9-Kv-99y" secondAttribute="bottom" constant="20" id="CDj-rl-Hph"/>
                             <constraint firstItem="k4U-fI-h3g" firstAttribute="top" secondItem="kul-f7-VCZ" secondAttribute="bottom" constant="8" id="KWb-fz-ooJ"/>
-                            <constraint firstItem="ze9-Kv-99y" firstAttribute="top" secondItem="87X-hu-TZP" secondAttribute="bottom" constant="56" id="Qgs-zL-VKh"/>
+                            <constraint firstItem="ze9-Kv-99y" firstAttribute="top" secondItem="87X-hu-TZP" secondAttribute="bottom" constant="56" id="Qgs-zL-VKh">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="ze9-Kv-99y" firstAttribute="centerX" secondItem="QIb-yM-Nhb" secondAttribute="centerX" id="RsL-8K-w16"/>
                             <constraint firstItem="jfw-Cq-4q7" firstAttribute="centerX" secondItem="QIb-yM-Nhb" secondAttribute="centerX" id="Z66-88-YZo"/>
                             <constraint firstItem="87X-hu-TZP" firstAttribute="centerX" secondItem="QIb-yM-Nhb" secondAttribute="centerX" id="hau-6f-XLv"/>
                             <constraint firstItem="k4U-fI-h3g" firstAttribute="centerX" secondItem="QIb-yM-Nhb" secondAttribute="centerX" id="v73-KB-dZP"/>
-                            <constraint firstItem="87X-hu-TZP" firstAttribute="top" secondItem="jfw-Cq-4q7" secondAttribute="bottom" constant="42" id="yUM-Hz-qFN"/>
+                            <constraint firstItem="87X-hu-TZP" firstAttribute="top" secondItem="jfw-Cq-4q7" secondAttribute="bottom" constant="42" id="yUM-Hz-qFN">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -528,6 +532,24 @@
                                 <exclude reference="yUM-Hz-qFN"/>
                                 <exclude reference="Qgs-zL-VKh"/>
                                 <exclude reference="RsL-8K-w16"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="k4U-fI-h3g"/>
+                                <include reference="ze9-Kv-99y"/>
+                                <include reference="87X-hu-TZP"/>
+                                <include reference="jfw-Cq-4q7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CDj-rl-Hph"/>
+                                <include reference="KWb-fz-ooJ"/>
+                                <include reference="v73-KB-dZP"/>
+                                <include reference="Z66-88-YZo"/>
+                                <include reference="hau-6f-XLv"/>
+                                <include reference="yUM-Hz-qFN"/>
+                                <include reference="Qgs-zL-VKh"/>
+                                <include reference="RsL-8K-w16"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
