@@ -9,6 +9,7 @@
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -59,7 +60,7 @@
                                 <rect key="frame" x="665" y="974" width="36" height="30"/>
                                 <state key="normal" title="Tutor"/>
                                 <connections>
-                                    <segue destination="Frx-ti-e6h" kind="presentation" id="7NL-jI-JOd"/>
+                                    <segue destination="Frx-ti-e6h" kind="presentation" id="aED-jH-QAL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P5-zU-LBe">
@@ -459,145 +460,77 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze9-Kv-99y">
-                                <rect key="frame" x="667" y="974" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="JDS-L0-m48" kind="presentation" id="ixA-GI-KnS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87X-hu-TZP">
-                                <rect key="frame" x="660" y="888" width="46" height="30"/>
-                                <state key="normal" title="Create"/>
-                                <connections>
-                                    <action selector="tutorLecturesCreateAction:" destination="ufv-Nf-glt" eventType="touchUpInside" id="JyN-5a-k9t"/>
-                                    <segue destination="rx9-VU-z0f" kind="presentation" id="CEw-xl-ozY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfw-Cq-4q7">
-                                <rect key="frame" x="668" y="816" width="30" height="30"/>
-                                <state key="normal" title="Exit"/>
-                                <connections>
-                                    <action selector="tutorsLecturesExitAction:" destination="ufv-Nf-glt" eventType="touchUpInside" id="igf-AH-IOK"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="bw2-4I-Goi"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zBe-SN-6ji" firstAttribute="top" secondItem="ze9-Kv-99y" secondAttribute="bottom" constant="20" id="CDj-rl-Hph"/>
                             <constraint firstItem="k4U-fI-h3g" firstAttribute="top" secondItem="kul-f7-VCZ" secondAttribute="bottom" constant="8" id="KWb-fz-ooJ"/>
-                            <constraint firstItem="ze9-Kv-99y" firstAttribute="top" secondItem="87X-hu-TZP" secondAttribute="bottom" constant="56" id="Qgs-zL-VKh">
-                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
-                            </constraint>
-                            <constraint firstItem="ze9-Kv-99y" firstAttribute="centerX" secondItem="QIb-yM-Nhb" secondAttribute="centerX" id="RsL-8K-w16"/>
-                            <constraint firstItem="jfw-Cq-4q7" firstAttribute="centerX" secondItem="QIb-yM-Nhb" secondAttribute="centerX" id="Z66-88-YZo"/>
-                            <constraint firstItem="87X-hu-TZP" firstAttribute="centerX" secondItem="QIb-yM-Nhb" secondAttribute="centerX" id="hau-6f-XLv"/>
                             <constraint firstItem="k4U-fI-h3g" firstAttribute="centerX" secondItem="QIb-yM-Nhb" secondAttribute="centerX" id="v73-KB-dZP"/>
-                            <constraint firstItem="87X-hu-TZP" firstAttribute="top" secondItem="jfw-Cq-4q7" secondAttribute="bottom" constant="42" id="yUM-Hz-qFN">
-                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
-                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="k4U-fI-h3g"/>
-                                <exclude reference="ze9-Kv-99y"/>
-                                <exclude reference="87X-hu-TZP"/>
-                                <exclude reference="jfw-Cq-4q7"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="CDj-rl-Hph"/>
                                 <exclude reference="KWb-fz-ooJ"/>
                                 <exclude reference="v73-KB-dZP"/>
-                                <exclude reference="Z66-88-YZo"/>
-                                <exclude reference="hau-6f-XLv"/>
-                                <exclude reference="yUM-Hz-qFN"/>
-                                <exclude reference="Qgs-zL-VKh"/>
-                                <exclude reference="RsL-8K-w16"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="k4U-fI-h3g"/>
-                                <include reference="ze9-Kv-99y"/>
-                                <include reference="87X-hu-TZP"/>
-                                <include reference="jfw-Cq-4q7"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="CDj-rl-Hph"/>
                                 <include reference="KWb-fz-ooJ"/>
                                 <include reference="v73-KB-dZP"/>
-                                <include reference="Z66-88-YZo"/>
-                                <include reference="hau-6f-XLv"/>
-                                <include reference="yUM-Hz-qFN"/>
-                                <include reference="Qgs-zL-VKh"/>
-                                <include reference="RsL-8K-w16"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="k4U-fI-h3g"/>
-                                <include reference="ze9-Kv-99y"/>
-                                <include reference="87X-hu-TZP"/>
-                                <include reference="jfw-Cq-4q7"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="CDj-rl-Hph"/>
                                 <include reference="KWb-fz-ooJ"/>
                                 <include reference="v73-KB-dZP"/>
-                                <include reference="Z66-88-YZo"/>
-                                <include reference="hau-6f-XLv"/>
-                                <include reference="yUM-Hz-qFN"/>
-                                <include reference="Qgs-zL-VKh"/>
-                                <include reference="RsL-8K-w16"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="k4U-fI-h3g"/>
-                                <include reference="ze9-Kv-99y"/>
-                                <include reference="87X-hu-TZP"/>
-                                <include reference="jfw-Cq-4q7"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="CDj-rl-Hph"/>
                                 <include reference="KWb-fz-ooJ"/>
                                 <include reference="v73-KB-dZP"/>
-                                <include reference="Z66-88-YZo"/>
-                                <include reference="hau-6f-XLv"/>
-                                <include reference="yUM-Hz-qFN"/>
-                                <include reference="Qgs-zL-VKh"/>
-                                <include reference="RsL-8K-w16"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="k4U-fI-h3g"/>
-                                <include reference="ze9-Kv-99y"/>
-                                <include reference="87X-hu-TZP"/>
-                                <include reference="jfw-Cq-4q7"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="CDj-rl-Hph"/>
                                 <include reference="KWb-fz-ooJ"/>
                                 <include reference="v73-KB-dZP"/>
-                                <include reference="Z66-88-YZo"/>
-                                <include reference="hau-6f-XLv"/>
-                                <include reference="yUM-Hz-qFN"/>
-                                <include reference="Qgs-zL-VKh"/>
-                                <include reference="RsL-8K-w16"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="gvg-VH-rZd"/>
-                    <connections>
-                        <outlet property="tutorLecturesCreateOutlet" destination="87X-hu-TZP" id="fV7-ML-Bu7"/>
-                        <outlet property="tutorLecturesExitOutlet" destination="jfw-Cq-4q7" id="3Gx-P2-cyn"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="gvg-VH-rZd">
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="1xM-Wu-2ds"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Next" id="vDL-EJ-Wcf">
+                                <connections>
+                                    <segue destination="JDS-L0-m48" kind="presentation" id="Wcd-bq-DcI"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Create" id="45O-dp-RoN">
+                                <connections>
+                                    <segue destination="rx9-VU-z0f" kind="presentation" id="nqF-9c-nCq"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udn-lu-foc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1621" y="1055"/>
+            <point key="canvasLocation" x="1347" y="857"/>
         </scene>
         <!--Tutor Lecture Status View Controller-->
         <scene sceneID="MkB-yA-uzh">
@@ -826,7 +759,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsv-ON-5Sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4698" y="1077"/>
+            <point key="canvasLocation" x="3932" y="857"/>
         </scene>
         <!--Tutor Lecture Review View Controller-->
         <scene sceneID="fjn-1z-KAf">
@@ -907,7 +840,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHo-hu-pid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6215" y="1055"/>
+            <point key="canvasLocation" x="5260" y="857"/>
         </scene>
         <!--Student Session View Controller-->
         <scene sceneID="5Lz-ZP-23m">
@@ -1043,7 +976,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9t5-BG-xCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3181" y="1055"/>
+            <point key="canvasLocation" x="2630" y="857"/>
         </scene>
         <!--Student Review View Controller-->
         <scene sceneID="Xf5-EB-VgR">
@@ -1140,7 +1073,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pC9-eG-O9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="1055"/>
+            <point key="canvasLocation" x="706" y="857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QnG-la-kdP">
@@ -1158,7 +1091,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJN-L3-EVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3922" y="1077"/>
+            <point key="canvasLocation" x="3273" y="857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y8L-BT-GKt">
@@ -1176,7 +1109,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5G-Dy-nRH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5462" y="1055"/>
+            <point key="canvasLocation" x="4594" y="857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Ub-ZK-28F">
@@ -1194,7 +1127,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTp-pZ-0wu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2426" y="1078"/>
+            <point key="canvasLocation" x="1995" y="857"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
