@@ -520,7 +520,7 @@
                                     <segue destination="JDS-L0-m48" kind="presentation" id="Wcd-bq-DcI"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Create" id="45O-dp-RoN">
+                            <barButtonItem title="New" id="45O-dp-RoN">
                                 <connections>
                                     <segue destination="rx9-VU-z0f" kind="presentation" id="nqF-9c-nCq"/>
                                 </connections>
@@ -972,11 +972,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8m4-Rn-tD7"/>
+                    <navigationItem key="navigationItem" id="8m4-Rn-tD7">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="3Rn-MB-rfJ">
+                            <connections>
+                                <segue destination="Frx-ti-e6h" kind="presentation" id="MZD-ty-dhz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Create" id="KcH-ge-CGm">
+                            <connections>
+                                <segue destination="JDS-L0-m48" kind="presentation" id="hSd-vf-tLl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9t5-BG-xCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2630" y="857"/>
+            <point key="canvasLocation" x="2631" y="857"/>
         </scene>
         <!--Student Review View Controller-->
         <scene sceneID="Xf5-EB-VgR">
@@ -1091,7 +1102,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJN-L3-EVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3273" y="857"/>
+            <point key="canvasLocation" x="3280" y="857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y8L-BT-GKt">
@@ -1131,7 +1142,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ILt-lT-fRK"/>
+        <segue reference="MZD-ty-dhz"/>
+        <segue reference="hSd-vf-tLl"/>
         <segue reference="Dj2-9O-ot8"/>
     </inferredMetricsTieBreakers>
 </document>
