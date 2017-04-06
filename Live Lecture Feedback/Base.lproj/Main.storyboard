@@ -630,13 +630,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNZ-Fx-ONu">
-                                <rect key="frame" x="272.5" y="72" width="191" height="36"/>
+                                <rect key="frame" x="144.5" y="72" width="191" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceH-ta-EXD">
-                                <rect key="frame" x="352" y="376" width="32" height="30"/>
+                                <rect key="frame" x="224" y="282" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="tutorStatusNextAction:" destination="9xR-Xk-1pM" eventType="touchUpInside" id="OIv-Ul-44q"/>
@@ -644,19 +644,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abc123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksS-U0-7ll">
-                                <rect key="frame" x="340" y="328" width="56" height="21"/>
+                                <rect key="frame" x="212" y="248" width="56" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-53-QqN">
-                                <rect key="frame" x="328" y="299" width="81" height="21"/>
+                                <rect key="frame" x="200" y="219" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDI-Th-5Gt">
-                                <rect key="frame" x="330" y="248" width="76" height="21"/>
+                                <rect key="frame" x="202" y="188" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -679,10 +679,12 @@
                             <constraint firstItem="ksS-U0-7ll" firstAttribute="centerX" secondItem="9sc-53-QqN" secondAttribute="centerX" id="7TU-c2-Fce"/>
                             <constraint firstAttribute="leadingMargin" secondItem="SC9-bp-fIm" secondAttribute="leading" id="7eL-Ve-WSF"/>
                             <constraint firstItem="aDI-Th-5Gt" firstAttribute="top" secondItem="oNZ-Fx-ONu" secondAttribute="bottom" constant="414" id="D6W-6W-Vwi">
+                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="140"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="314"/>
                             </constraint>
                             <constraint firstItem="9sc-53-QqN" firstAttribute="top" secondItem="aDI-Th-5Gt" secondAttribute="bottom" constant="109" id="DfX-My-VC3">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="30"/>
                             </constraint>
                             <constraint firstItem="SC9-bp-fIm" firstAttribute="top" secondItem="oNZ-Fx-ONu" secondAttribute="bottom" constant="39" id="GbK-M7-qBF"/>
@@ -721,6 +723,33 @@
                                 <exclude reference="7TU-c2-Fce"/>
                                 <exclude reference="eZb-JE-mkH"/>
                                 <exclude reference="vqb-zq-3EM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="oNZ-Fx-ONu"/>
+                                <include reference="ceH-ta-EXD"/>
+                                <include reference="ksS-U0-7ll"/>
+                                <include reference="9sc-53-QqN"/>
+                                <include reference="aDI-Th-5Gt"/>
+                                <include reference="SC9-bp-fIm"/>
+                                <include reference="5sU-Xq-Ohq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="zkX-ap-zkR"/>
+                                <include reference="7eL-Ve-WSF"/>
+                                <include reference="GbK-M7-qBF"/>
+                                <include reference="b8D-CZ-5lG"/>
+                                <include reference="e4I-A6-rFO"/>
+                                <include reference="j2L-UE-Nh4"/>
+                                <include reference="ooL-Fh-w7u"/>
+                                <include reference="D6W-6W-Vwi"/>
+                                <include reference="Y2g-bz-AYH"/>
+                                <include reference="DfX-My-VC3"/>
+                                <include reference="OsH-g7-Rqh"/>
+                                <include reference="7TU-c2-Fce"/>
+                                <include reference="eZb-JE-mkH"/>
+                                <include reference="vqb-zq-3EM"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
