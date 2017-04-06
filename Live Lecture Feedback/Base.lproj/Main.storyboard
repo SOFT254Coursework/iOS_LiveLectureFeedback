@@ -25,32 +25,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuh-fk-EpA">
-                                <rect key="frame" x="14.666666666666664" y="207" width="84.333333333333343" height="30"/>
+                                <rect key="frame" x="14.666666666666664" y="327" width="84" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB9-O7-z6v">
-                                <rect key="frame" x="14.666666666666664" y="309" width="74" height="30"/>
+                                <rect key="frame" x="14.666666666666664" y="409" width="74" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lk8-TG-cp1">
-                                <rect key="frame" x="129" y="207" width="156.33333333333331" height="30"/>
+                                <rect key="frame" x="128.66666666666669" y="327" width="156.66666666666669" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyi-cc-m5W">
-                                <rect key="frame" x="182.66666666666666" y="371" width="49" height="30"/>
+                                <rect key="frame" x="182.66666666666666" y="471" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="homeSubmitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hba-js-Fy7"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XS4-av-TcI">
-                                <rect key="frame" x="128.66666666666669" y="309" width="156.66666666666669" height="30"/>
+                                <rect key="frame" x="128.66666666666669" y="409" width="156.66666666666669" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -81,7 +81,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="XS4-av-TcI" secondAttribute="trailing" multiplier="1.1" constant="200" id="FwK-8p-EGO">
                                 <variation key="heightClass=regular-widthClass=compact" constant="80"/>
                             </constraint>
-                            <constraint firstItem="XS4-av-TcI" firstAttribute="top" secondItem="Lk8-TG-cp1" secondAttribute="bottom" constant="72" id="ITT-ZM-CbG"/>
+                            <constraint firstItem="XS4-av-TcI" firstAttribute="top" secondItem="Lk8-TG-cp1" secondAttribute="bottom" constant="72" id="ITT-ZM-CbG">
+                                <variation key="heightClass=regular-widthClass=compact" constant="52"/>
+                            </constraint>
                             <constraint firstItem="vuh-fk-EpA" firstAttribute="height" secondItem="Lk8-TG-cp1" secondAttribute="height" id="Lrb-m8-ov8"/>
                             <constraint firstItem="Eyi-cc-m5W" firstAttribute="top" secondItem="XS4-av-TcI" secondAttribute="bottom" constant="32" id="MGe-jL-IVf"/>
                             <constraint firstItem="Wuj-2V-2BU" firstAttribute="top" secondItem="8P5-zU-LBe" secondAttribute="bottom" constant="15" id="Qk4-rq-OnE"/>
@@ -92,7 +94,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="40"/>
                             </constraint>
                             <constraint firstItem="8P5-zU-LBe" firstAttribute="top" secondItem="Eyi-cc-m5W" secondAttribute="bottom" constant="340" id="giC-22-LXl">
-                                <variation key="heightClass=regular-widthClass=compact" constant="240"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="140"/>
                             </constraint>
                             <constraint firstItem="vuh-fk-EpA" firstAttribute="centerY" secondItem="Lk8-TG-cp1" secondAttribute="centerY" id="iKK-NL-clf"/>
                             <constraint firstItem="8P5-zU-LBe" firstAttribute="centerX" secondItem="Wuj-2V-2BU" secondAttribute="centerX" id="lC2-3d-egY"/>
@@ -220,13 +222,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M2S-Df-CVS">
-                                <rect key="frame" x="128.66666666666669" y="309" width="156.66666666666669" height="30"/>
+                                <rect key="frame" x="128.66666666666669" y="426" width="156.66666666666669" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfL-Bz-nkg">
-                                <rect key="frame" x="17.666666666666671" y="309" width="81" height="30"/>
+                                <rect key="frame" x="17.666666666666671" y="426" width="81" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -239,7 +241,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFx-Vu-iVa">
-                                <rect key="frame" x="182.66666666666666" y="359" width="49" height="30"/>
+                                <rect key="frame" x="182.66666666666666" y="476" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <segue destination="hKQ-ak-qLP" kind="presentation" id="2gV-si-XbN"/>
@@ -255,7 +257,7 @@
                             <constraint firstItem="CJJ-cH-Nf5" firstAttribute="centerX" secondItem="0a2-OZ-3yU" secondAttribute="centerX" id="FKJ-ZM-dfW"/>
                             <constraint firstItem="nfL-Bz-nkg" firstAttribute="centerY" secondItem="M2S-Df-CVS" secondAttribute="centerY" id="IIA-Aw-yiD"/>
                             <constraint firstItem="CJJ-cH-Nf5" firstAttribute="top" secondItem="cFx-Vu-iVa" secondAttribute="bottom" constant="397" id="Rnh-m3-CPO">
-                                <variation key="heightClass=regular-widthClass=compact" constant="297"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="180"/>
                             </constraint>
                             <constraint firstItem="nfL-Bz-nkg" firstAttribute="height" secondItem="M2S-Df-CVS" secondAttribute="height" id="TVD-lu-3o8"/>
                             <constraint firstItem="cFx-Vu-iVa" firstAttribute="top" secondItem="M2S-Df-CVS" secondAttribute="bottom" constant="20" id="ULB-ca-MXp"/>
@@ -637,7 +639,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHy-Vc-WrH">
-                                <rect key="frame" x="186.66666666666663" y="686" width="41" height="30"/>
+                                <rect key="frame" x="186.66666666666666" y="686" width="41" height="30"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
                                     <action selector="tutorReveiwHomeAction:" destination="bF1-AN-DLT" eventType="touchUpInside" id="XvV-E6-2mo"/>
@@ -805,7 +807,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEg-rm-jxQ">
-                                <rect key="frame" x="182.66666666666663" y="686" width="49" height="30"/>
+                                <rect key="frame" x="182.66666666666666" y="686" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="studentReviewSubmitAction:" destination="iWn-of-YzE" eventType="touchUpInside" id="Yaj-16-15c"/>
