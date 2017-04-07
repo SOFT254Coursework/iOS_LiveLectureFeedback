@@ -941,7 +941,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBR-Wg-heT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="18w-6r-XS1"/>
             </objects>
             <point key="canvasLocation" x="2628.985507246377" y="412.50000000000006"/>
         </scene>
@@ -986,7 +985,72 @@
                     <view key="view" contentMode="scaleToFill" id="rcg-0Q-B6i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqQ-rX-yqu">
+                                <rect key="frame" x="100.33333333333331" y="526" width="213.33333333333337" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nqQ-rX-yqu" secondAttribute="height" multiplier="107:80" id="gEn-Zo-Iv5"/>
+                                </constraints>
+                                <state key="normal" image="RedButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dN4-fc-N0S">
+                                <rect key="frame" x="100.33333333333331" y="114" width="213.33333333333337" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dN4-fc-N0S" secondAttribute="height" multiplier="107:80" id="agz-Mk-TEk"/>
+                                </constraints>
+                                <state key="normal" image="RedButton"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dN4-fc-N0S" firstAttribute="top" secondItem="odX-c2-Z0I" secondAttribute="bottom" constant="100" id="9UV-6l-zTr">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="nqQ-rX-yqu" secondAttribute="trailing" constant="50" id="Hfi-4g-Xvn"/>
+                            <constraint firstItem="fEf-FV-CkZ" firstAttribute="top" secondItem="nqQ-rX-yqu" secondAttribute="bottom" constant="100" id="Jbc-OC-nRv">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="dN4-fc-N0S" firstAttribute="centerX" secondItem="rcg-0Q-B6i" secondAttribute="centerX" id="KwN-YD-fQs"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="dN4-fc-N0S" secondAttribute="trailing" constant="50" id="OfV-wh-0xp"/>
+                            <constraint firstItem="nqQ-rX-yqu" firstAttribute="centerX" secondItem="dN4-fc-N0S" secondAttribute="centerX" id="iaq-Z1-ZlK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nqQ-rX-yqu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9UV-6l-zTr"/>
+                                <exclude reference="KwN-YD-fQs"/>
+                                <exclude reference="OfV-wh-0xp"/>
+                                <exclude reference="Hfi-4g-Xvn"/>
+                                <exclude reference="iaq-Z1-ZlK"/>
+                                <exclude reference="Jbc-OC-nRv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="nqQ-rX-yqu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9UV-6l-zTr"/>
+                                <include reference="KwN-YD-fQs"/>
+                                <include reference="OfV-wh-0xp"/>
+                                <include reference="Hfi-4g-Xvn"/>
+                                <include reference="iaq-Z1-ZlK"/>
+                                <include reference="Jbc-OC-nRv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="nqQ-rX-yqu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9UV-6l-zTr"/>
+                                <include reference="KwN-YD-fQs"/>
+                                <include reference="iaq-Z1-ZlK"/>
+                                <include reference="Jbc-OC-nRv"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="cbO-Uu-x0D">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="efc-gM-oEv">
@@ -998,7 +1062,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5O-AM-BBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4187" y="413"/>
+            <point key="canvasLocation" x="4186.5234375" y="412.88433382137623"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5DZ-co-GQH">
