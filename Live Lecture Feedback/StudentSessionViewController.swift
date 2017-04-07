@@ -11,6 +11,8 @@ import UIKit
 class StudentSessionViewController: UIViewController {
 
     @IBOutlet weak var studentLectureNextOutlet: UIButton!
+    @IBOutlet weak var StudentLectureRedButtonOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +26,11 @@ class StudentSessionViewController: UIViewController {
     
     @IBAction func studentLectureNextAction(_ sender: Any) {
     }
+    
+    @IBAction func StudentLectureRedButtonAction(_ sender: Any) {
+    }
+    
+    
 
     /*
     // MARK: - Navigation
