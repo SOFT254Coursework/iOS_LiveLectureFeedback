@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20260CD21EADE5B000EA3B71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20260CD11EADE5B000EA3B71 /* GoogleService-Info.plist */; };
 		20BF3D4D1E858090005979F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BF3D4C1E858090005979F3 /* AppDelegate.swift */; };
 		20BF3D4F1E858090005979F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BF3D4E1E858090005979F3 /* ViewController.swift */; };
 		20BF3D521E858090005979F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BF3D501E858090005979F3 /* Main.storyboard */; };
@@ -20,9 +21,11 @@
 		31882F811E8E951E0043CBA1 /* TutorCreateLectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F801E8E951E0043CBA1 /* TutorCreateLectureViewController.swift */; };
 		31882F831E8E95680043CBA1 /* TutorLectureStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F821E8E95680043CBA1 /* TutorLectureStatusViewController.swift */; };
 		31882F851E8E95EB0043CBA1 /* TutorLectureReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F841E8E95EB0043CBA1 /* TutorLectureReviewViewController.swift */; };
+		5E7B49641276D0ACBBC8CD6D /* Pods_Live_Lecture_Feedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5517A1F727BE3F2167B97DE2 /* Pods_Live_Lecture_Feedback.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20260CD11EADE5B000EA3B71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		20BF3D491E858090005979F3 /* Live Lecture Feedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live Lecture Feedback.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BF3D4C1E858090005979F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BF3D4E1E858090005979F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		31882F801E8E951E0043CBA1 /* TutorCreateLectureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorCreateLectureViewController.swift; sourceTree = "<group>"; };
 		31882F821E8E95680043CBA1 /* TutorLectureStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorLectureStatusViewController.swift; sourceTree = "<group>"; };
 		31882F841E8E95EB0043CBA1 /* TutorLectureReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorLectureReviewViewController.swift; sourceTree = "<group>"; };
+		5517A1F727BE3F2167B97DE2 /* Pods_Live_Lecture_Feedback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Live_Lecture_Feedback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80ABBFD82371709AD3A9AC45 /* Pods-Live Lecture Feedback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live Lecture Feedback.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Live Lecture Feedback/Pods-Live Lecture Feedback.debug.xcconfig"; sourceTree = "<group>"; };
+		BA5D9A35DF3B7420C52E458A /* Pods-Live Lecture Feedback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live Lecture Feedback.release.xcconfig"; path = "Pods/Target Support Files/Pods-Live Lecture Feedback/Pods-Live Lecture Feedback.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7B49641276D0ACBBC8CD6D /* Pods_Live_Lecture_Feedback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +64,8 @@
 				3148A0841E966B3800D8783F /* Tutor Create Lecture View Controller.swift */,
 				20BF3D4B1E858090005979F3 /* Live Lecture Feedback */,
 				20BF3D4A1E858090005979F3 /* Products */,
+				CE9BCD1B2469A1EB7619C726 /* Pods */,
+				4A9979D15036467C169ABF80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +80,7 @@
 		20BF3D4B1E858090005979F3 /* Live Lecture Feedback */ = {
 			isa = PBXGroup;
 			children = (
+				20260CD11EADE5B000EA3B71 /* GoogleService-Info.plist */,
 				20BF3D4C1E858090005979F3 /* AppDelegate.swift */,
 				20BF3D4E1E858090005979F3 /* ViewController.swift */,
 				31882F781E8E93780043CBA1 /* StudentSignUpViewController.swift */,
@@ -88,6 +98,23 @@
 			path = "Live Lecture Feedback";
 			sourceTree = "<group>";
 		};
+		4A9979D15036467C169ABF80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5517A1F727BE3F2167B97DE2 /* Pods_Live_Lecture_Feedback.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE9BCD1B2469A1EB7619C726 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80ABBFD82371709AD3A9AC45 /* Pods-Live Lecture Feedback.debug.xcconfig */,
+				BA5D9A35DF3B7420C52E458A /* Pods-Live Lecture Feedback.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20BF3D5B1E858090005979F3 /* Build configuration list for PBXNativeTarget "Live Lecture Feedback" */;
 			buildPhases = (
+				38506AF5FFE0CF4477D413BC /* [CP] Check Pods Manifest.lock */,
 				20BF3D451E85808F005979F3 /* Sources */,
 				20BF3D461E85808F005979F3 /* Frameworks */,
 				20BF3D471E85808F005979F3 /* Resources */,
+				7AD97166AFBC0F5AA7B3449F /* [CP] Embed Pods Frameworks */,
+				0A5FEC83B1B7DF7DF80D5516 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,12 +178,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BF3D571E858090005979F3 /* LaunchScreen.storyboard in Resources */,
+				20260CD21EADE5B000EA3B71 /* GoogleService-Info.plist in Resources */,
 				20BF3D541E858090005979F3 /* Assets.xcassets in Resources */,
 				20BF3D521E858090005979F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A5FEC83B1B7DF7DF80D5516 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Live Lecture Feedback/Pods-Live Lecture Feedback-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38506AF5FFE0CF4477D413BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AD97166AFBC0F5AA7B3449F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Live Lecture Feedback/Pods-Live Lecture Feedback-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20BF3D451E85808F005979F3 /* Sources */ = {
@@ -290,6 +369,7 @@
 		};
 		20BF3D5C1E858090005979F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80ABBFD82371709AD3A9AC45 /* Pods-Live Lecture Feedback.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Live Lecture Feedback/Info.plist";
@@ -302,6 +382,7 @@
 		};
 		20BF3D5D1E858090005979F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA5D9A35DF3B7420C52E458A /* Pods-Live Lecture Feedback.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Live Lecture Feedback/Info.plist";
