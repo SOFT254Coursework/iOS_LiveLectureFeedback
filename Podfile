@@ -8,5 +8,7 @@ target 'Live Lecture Feedback' do
   # Pods for Live Lecture Feedback
 
   pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Database'
 
 end
