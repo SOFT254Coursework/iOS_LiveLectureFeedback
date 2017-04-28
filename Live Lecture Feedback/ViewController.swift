@@ -18,6 +18,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     let limitLength = 8
     
+    var ref: FIRDatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         FIRAuth.auth()?.signInAnonymously(completion: { (user, error) in
@@ -31,6 +33,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         txt_id.delegate = self
         txt_pwd.delegate = self
+        
+        ref = FIRDatabase.database().reference()
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,8 +54,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onLoginTouchDown(_ sender: Any) {
+        guard let id = txt_id.text, !id.isEmpty else {
+            return
+        }
+        guard let pwd = txt_pwd.text, !pwd.isEmpty else {
+            return
+        }
         
+        
+        ref.child("users").child(id).observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            if pwd == value?["pwd"] as? String ?? "" {
+                print("Login succuessed")
+            }
+        })
     }
-    
 }
-
