@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StudentSessionViewController: UIViewController {
+class SessionViewController: UIViewController {
 
     @IBOutlet weak var studentLectureNextOutlet: UIButton!
     @IBOutlet weak var StudentLectureRedButtonOutlet: UIButton!

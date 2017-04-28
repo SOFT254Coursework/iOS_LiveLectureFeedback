@@ -1,5 +1,5 @@
 //
-//  StudentSignUpViewController.swift
+//  SignUpViewController.swift
 //  Live Lecture Feedback
 //
 //  Created by (s) Mark Thompson on 31/03/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StudentSignUpViewController: UIViewController {
+class SignUpViewController: UIViewController {
     
     var sSessionId : String?
 

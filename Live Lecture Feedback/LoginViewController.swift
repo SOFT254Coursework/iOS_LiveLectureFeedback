@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var txt_id: UITextField!
     @IBOutlet weak var txt_pwd: UITextField!
@@ -65,7 +65,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         ref.child("users").child(id).observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary
             if pwd == value?["pwd"] as? String ?? "" {
-                print("Login succuessed")
+                let userType = value?["type"] as? String ?? ""
+                
+                switch userType {
+                case "staff":
+                    self.performSegue(withIdentifier: "StaffLogin", sender: self)
+                case "student":
+                    self.performSegue(withIdentifier: "StudentLogin", sender: self)
+                default:
+                    return
+                }
             }
         })
     }

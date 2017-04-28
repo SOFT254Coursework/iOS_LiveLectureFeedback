@@ -14,10 +14,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Live_Lecture_Feedback" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginView" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Live_Lecture_Feedback" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -54,22 +54,9 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XS4-av-TcI">
                                 <rect key="frame" x="121.5" y="340" width="132" height="30"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuj-2V-2BU">
-                                <rect key="frame" x="169.5" y="617" width="36" height="30"/>
-                                <state key="normal" title="Tutor"/>
-                                <connections>
-                                    <segue destination="Frx-ti-e6h" kind="presentation" id="aED-jH-QAL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P5-zU-LBe">
-                                <rect key="frame" x="160" y="572" width="55" height="30"/>
-                                <state key="normal" title="Student"/>
-                                <connections>
-                                    <segue destination="LI1-V0-VG9" kind="presentation" id="TyN-hs-RTs"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -91,9 +78,6 @@
                             <constraint firstItem="Eyi-cc-m5W" firstAttribute="top" secondItem="XS4-av-TcI" secondAttribute="bottom" constant="32" id="MGe-jL-IVf">
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                             </constraint>
-                            <constraint firstItem="Wuj-2V-2BU" firstAttribute="top" secondItem="8P5-zU-LBe" secondAttribute="bottom" constant="15" id="Qk4-rq-OnE">
-                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
-                            </constraint>
                             <constraint firstItem="Eyi-cc-m5W" firstAttribute="centerX" secondItem="XS4-av-TcI" secondAttribute="centerX" id="Tmj-Hk-X9X"/>
                             <constraint firstItem="VB9-O7-z6v" firstAttribute="height" secondItem="XS4-av-TcI" secondAttribute="height" id="To7-5V-xvt"/>
                             <constraint firstItem="Lk8-TG-cp1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wkv-NU-iR9"/>
@@ -101,17 +85,8 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="25"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="40"/>
                             </constraint>
-                            <constraint firstItem="8P5-zU-LBe" firstAttribute="top" secondItem="Eyi-cc-m5W" secondAttribute="bottom" constant="340" id="giC-22-LXl">
-                                <variation key="heightClass=compact-widthClass=compact" constant="15"/>
-                                <variation key="heightClass=compact-widthClass=regular" constant="50"/>
-                                <variation key="heightClass=regular-widthClass=compact" constant="140"/>
-                            </constraint>
                             <constraint firstItem="vuh-fk-EpA" firstAttribute="centerY" secondItem="Lk8-TG-cp1" secondAttribute="centerY" id="iKK-NL-clf"/>
-                            <constraint firstItem="8P5-zU-LBe" firstAttribute="centerX" secondItem="Wuj-2V-2BU" secondAttribute="centerX" id="lC2-3d-egY"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wuj-2V-2BU" secondAttribute="bottom" constant="20" id="uN6-D2-kY2">
-                                <variation key="heightClass=compact-widthClass=compact" constant="15"/>
-                            </constraint>
-                            <constraint firstItem="Wuj-2V-2BU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vND-Vu-reI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Eyi-cc-m5W" secondAttribute="bottom" constant="235" id="mPK-xX-8bT"/>
                             <constraint firstItem="XS4-av-TcI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vWI-hP-siY"/>
                         </constraints>
                         <variation key="default">
@@ -121,11 +96,8 @@
                                 <exclude reference="Lk8-TG-cp1"/>
                                 <exclude reference="Eyi-cc-m5W"/>
                                 <exclude reference="XS4-av-TcI"/>
-                                <exclude reference="Wuj-2V-2BU"/>
-                                <exclude reference="8P5-zU-LBe"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="uN6-D2-kY2"/>
                                 <exclude reference="Lrb-m8-ov8"/>
                                 <exclude reference="iKK-NL-clf"/>
                                 <exclude reference="4Oe-GI-1Vn"/>
@@ -140,10 +112,6 @@
                                 <exclude reference="vWI-hP-siY"/>
                                 <exclude reference="MGe-jL-IVf"/>
                                 <exclude reference="Tmj-Hk-X9X"/>
-                                <exclude reference="giC-22-LXl"/>
-                                <exclude reference="lC2-3d-egY"/>
-                                <exclude reference="Qk4-rq-OnE"/>
-                                <exclude reference="vND-Vu-reI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -153,11 +121,8 @@
                                 <include reference="Lk8-TG-cp1"/>
                                 <include reference="Eyi-cc-m5W"/>
                                 <include reference="XS4-av-TcI"/>
-                                <include reference="Wuj-2V-2BU"/>
-                                <include reference="8P5-zU-LBe"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="uN6-D2-kY2"/>
                                 <include reference="Lrb-m8-ov8"/>
                                 <include reference="iKK-NL-clf"/>
                                 <include reference="4Oe-GI-1Vn"/>
@@ -172,10 +137,6 @@
                                 <include reference="vWI-hP-siY"/>
                                 <include reference="MGe-jL-IVf"/>
                                 <include reference="Tmj-Hk-X9X"/>
-                                <include reference="giC-22-LXl"/>
-                                <include reference="lC2-3d-egY"/>
-                                <include reference="Qk4-rq-OnE"/>
-                                <include reference="vND-Vu-reI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -185,11 +146,8 @@
                                 <include reference="Lk8-TG-cp1"/>
                                 <include reference="Eyi-cc-m5W"/>
                                 <include reference="XS4-av-TcI"/>
-                                <include reference="Wuj-2V-2BU"/>
-                                <include reference="8P5-zU-LBe"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="uN6-D2-kY2"/>
                                 <include reference="Lrb-m8-ov8"/>
                                 <include reference="iKK-NL-clf"/>
                                 <include reference="4Oe-GI-1Vn"/>
@@ -204,10 +162,6 @@
                                 <include reference="vWI-hP-siY"/>
                                 <include reference="MGe-jL-IVf"/>
                                 <include reference="Tmj-Hk-X9X"/>
-                                <include reference="giC-22-LXl"/>
-                                <include reference="lC2-3d-egY"/>
-                                <include reference="Qk4-rq-OnE"/>
-                                <include reference="vND-Vu-reI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -217,11 +171,8 @@
                                 <include reference="Lk8-TG-cp1"/>
                                 <include reference="Eyi-cc-m5W"/>
                                 <include reference="XS4-av-TcI"/>
-                                <include reference="Wuj-2V-2BU"/>
-                                <include reference="8P5-zU-LBe"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="uN6-D2-kY2"/>
                                 <include reference="Lrb-m8-ov8"/>
                                 <include reference="iKK-NL-clf"/>
                                 <include reference="4Oe-GI-1Vn"/>
@@ -236,10 +187,6 @@
                                 <include reference="vWI-hP-siY"/>
                                 <include reference="MGe-jL-IVf"/>
                                 <include reference="Tmj-Hk-X9X"/>
-                                <include reference="giC-22-LXl"/>
-                                <include reference="lC2-3d-egY"/>
-                                <include reference="Qk4-rq-OnE"/>
-                                <include reference="vND-Vu-reI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -249,11 +196,8 @@
                                 <include reference="Lk8-TG-cp1"/>
                                 <include reference="Eyi-cc-m5W"/>
                                 <include reference="XS4-av-TcI"/>
-                                <include reference="Wuj-2V-2BU"/>
-                                <include reference="8P5-zU-LBe"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="uN6-D2-kY2"/>
                                 <include reference="Lrb-m8-ov8"/>
                                 <include reference="iKK-NL-clf"/>
                                 <include reference="4Oe-GI-1Vn"/>
@@ -268,10 +212,6 @@
                                 <include reference="vWI-hP-siY"/>
                                 <include reference="MGe-jL-IVf"/>
                                 <include reference="Tmj-Hk-X9X"/>
-                                <include reference="giC-22-LXl"/>
-                                <include reference="lC2-3d-egY"/>
-                                <include reference="Qk4-rq-OnE"/>
-                                <include reference="vND-Vu-reI"/>
                             </mask>
                         </variation>
                     </view>
@@ -279,16 +219,18 @@
                         <outlet property="btn_login" destination="Eyi-cc-m5W" id="3J6-d0-tyr"/>
                         <outlet property="txt_id" destination="Lk8-TG-cp1" id="jCY-g2-Ie2"/>
                         <outlet property="txt_pwd" destination="XS4-av-TcI" id="Oef-P8-2HS"/>
+                        <segue destination="LI1-V0-VG9" kind="show" identifier="StudentLogin" id="WJe-N8-7KZ"/>
+                        <segue destination="Frx-ti-e6h" kind="show" identifier="StaffLogin" id="mx1-J2-a0S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-441" y="786"/>
         </scene>
-        <!--Student Sign Up View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="grS-Hc-Lhf">
             <objects>
-                <viewController id="9KN-Cl-dz1" customClass="StudentSignUpViewController" customModule="Live_Lecture_Feedback" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpView" id="9KN-Cl-dz1" customClass="SignUpViewController" customModule="Live_Lecture_Feedback" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VQD-MW-fDV"/>
                         <viewControllerLayoutGuide type="bottom" id="WLW-8S-Lwr"/>
@@ -1371,8 +1313,8 @@
         <image name="RedButton" width="320" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Dj2-9O-ot8"/>
-        <segue reference="aED-jH-QAL"/>
         <segue reference="Wcd-bq-DcI"/>
+        <segue reference="mx1-J2-a0S"/>
+        <segue reference="Dj2-9O-ot8"/>
     </inferredMetricsTieBreakers>
 </document>
