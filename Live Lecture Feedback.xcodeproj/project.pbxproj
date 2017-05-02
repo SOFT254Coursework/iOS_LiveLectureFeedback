@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20260CD21EADE5B000EA3B71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20260CD11EADE5B000EA3B71 /* GoogleService-Info.plist */; };
+		20A88C491EB8BABB00A72B5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20A88C481EB8BABB00A72B5C /* GoogleService-Info.plist */; };
 		20BF3D4D1E858090005979F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BF3D4C1E858090005979F3 /* AppDelegate.swift */; };
 		20BF3D4F1E858090005979F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BF3D4E1E858090005979F3 /* LoginViewController.swift */; };
 		20BF3D521E858090005979F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BF3D501E858090005979F3 /* Main.storyboard */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		20260CD11EADE5B000EA3B71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		20A88C481EB8BABB00A72B5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		20BF3D491E858090005979F3 /* Live Lecture Feedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live Lecture Feedback.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BF3D4C1E858090005979F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BF3D4E1E858090005979F3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		20BF3D4B1E858090005979F3 /* Live Lecture Feedback */ = {
 			isa = PBXGroup;
 			children = (
-				20260CD11EADE5B000EA3B71 /* GoogleService-Info.plist */,
+				20A88C481EB8BABB00A72B5C /* GoogleService-Info.plist */,
 				20BF3D4C1E858090005979F3 /* AppDelegate.swift */,
 				20BF3D4E1E858090005979F3 /* LoginViewController.swift */,
 				31882F781E8E93780043CBA1 /* SignUpViewController.swift */,
@@ -178,7 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BF3D571E858090005979F3 /* LaunchScreen.storyboard in Resources */,
-				20260CD21EADE5B000EA3B71 /* GoogleService-Info.plist in Resources */,
+				20A88C491EB8BABB00A72B5C /* GoogleService-Info.plist in Resources */,
 				20BF3D541E858090005979F3 /* Assets.xcassets in Resources */,
 				20BF3D521E858090005979F3 /* Main.storyboard in Resources */,
 			);
