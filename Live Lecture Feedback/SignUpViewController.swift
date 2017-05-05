@@ -7,33 +7,52 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
+
+    @IBOutlet weak var txt_sessionId: UITextField!
     
-    var sSessionId : String?
-
-    @IBOutlet weak var studentSessionIdOutlet: UITextField!
-    @IBOutlet weak var studentSessionSubmitOutlet: UIButton!
-    @IBOutlet weak var studentSessionExitOutlet: UIButton!
+    let limitLength = 6
+    
+    var ref: FIRDatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        txt_sessionId.delegate = self
+        
+        ref = FIRDatabase.database().reference()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    @IBAction func studentSessionSubmitAction(_ sender: Any) {
+    @IBAction func onSubmitTouchDown(_ sender: Any) {
+        guard let sId = txt_sessionId.text, !sId.isEmpty else {
+            return
+        }
+        
+        signUpSession(sessionId: sId)
     }
     
-    @IBAction func studentSessionExitAction(_ sender: Any) {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text else {
+            return true
+        }
+        let newLength = text.characters.count + string.characters.count - range.length
+        
+        return newLength <= limitLength
     }
     
+    private func signUpSession(sessionId : String) {
+        ref.child("sessions").child(sessionId).observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            print(value!)
+        })
+    }
     
     /*
     // MARK: - Navigation
