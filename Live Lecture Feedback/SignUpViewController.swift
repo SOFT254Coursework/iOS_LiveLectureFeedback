@@ -54,6 +54,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         })
     }
     
+    func pushStudentSession() {
+        //How to invoke a segue not connected with an action
+        performSegue(withIdentifier: "SIGNEDIN", sender: self)
+    }
     /*
     // MARK: - Navigation
 
