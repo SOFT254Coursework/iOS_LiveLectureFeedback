@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TutorLecturesViewController: UIViewController {
+class TutorLecturesViewController: UITableViewController {
 
     @IBOutlet weak var tutorLecturesExitOutlet: UIButton!
     @IBOutlet weak var tutorLecturesCreateOutlet: UIButton!
@@ -22,6 +22,20 @@ class TutorLecturesViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3 //To be replaced by an int variable which will get it's value from the database.
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Plain", for: <#T##IndexPath#>)
+        
+        return cell
     }
     
     @IBAction func tutorsLecturesExitAction(_ sender: Any) {
