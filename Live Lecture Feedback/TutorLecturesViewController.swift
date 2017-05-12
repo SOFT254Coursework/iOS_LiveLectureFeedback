@@ -17,8 +17,14 @@ class TutorLecturesViewController: UITableViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: UIBarButtonItemStyle.plain, target: self, action:#selector(addTouched) )
     }
 
+    @IBAction func addTouched(_ sender: Any) {
+        print("Touchy!")
+        self.performSegue(withIdentifier: "TutorCreateLecture", sender: self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,8 +39,12 @@ class TutorLecturesViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Plain", for: <#T##IndexPath#>)
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LectureCell", for: indexPath)
+        
+        if let nextCell = cell as? LectureTableViewCell {
+            nextCell.sessionTitle.text = "Hello World"
+        }
         return cell
     }
     

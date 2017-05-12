@@ -16,6 +16,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txt_pwd: UITextField!
     @IBOutlet weak var btn_login: UIButton!
     
+    //TODO: Get rid of this
+    @IBAction func doUITest(_ sender: Any) {
+        self.performSegue(withIdentifier: "TutorLogin", sender: self)
+        
+    }
+    
     let limitLength = 8
     
     var ref: FIRDatabaseReference!

@@ -51,6 +51,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         ref.child("sessions").child(sessionId).observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary
             print(value!)
+            self.performSegue(withIdentifier: "SIGNIN", sender: self)
         })
     }
     
