@@ -525,7 +525,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SimpleTitle" id="ysk-fL-c90">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SimpleTitle" id="ysk-fL-c90" customClass="SimpleTitleCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="144" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ysk-fL-c90" id="66M-fE-Tmw">
@@ -533,7 +533,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPC-yj-sdy">
-                                            <rect key="frame" x="162.33333333333337" y="11" width="89.666666666666657" height="21"/>
+                                            <rect key="frame" x="8" y="11" width="89.666666666666671" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -541,9 +541,12 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="LPC-yj-sdy" firstAttribute="centerY" secondItem="66M-fE-Tmw" secondAttribute="centerY" id="PJC-lV-Ora"/>
-                                        <constraint firstItem="LPC-yj-sdy" firstAttribute="centerX" secondItem="66M-fE-Tmw" secondAttribute="centerX" id="PPe-Si-B98"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="LPC-yj-sdy" secondAttribute="leading" id="zvi-Ey-UCf"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="LPC-yj-sdy" id="ksW-qO-pct"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
