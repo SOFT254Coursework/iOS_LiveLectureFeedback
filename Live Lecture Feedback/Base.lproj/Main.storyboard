@@ -485,25 +485,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextEntry" id="jVm-rJ-pMn">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextEntry" id="jVm-rJ-pMn" customClass="TextEntryCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="56" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jVm-rJ-pMn" id="rsn-lD-LKY">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtG-4Z-UoT">
-                                            <rect key="frame" x="169" y="11" width="77" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QZ-pj-ull">
+                                            <rect key="frame" x="108" y="6" width="198" height="30"/>
                                             <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="dataEntryTextField:" destination="jVm-rJ-pMn" eventType="editingDidEnd" id="8pU-Qp-WBh"/>
+                                            </connections>
+                                        </textField>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="HtG-4Z-UoT" firstAttribute="centerY" secondItem="rsn-lD-LKY" secondAttribute="centerY" id="2wK-Qs-5h8"/>
-                                        <constraint firstItem="HtG-4Z-UoT" firstAttribute="centerX" secondItem="rsn-lD-LKY" secondAttribute="centerX" id="Fej-rj-M9I"/>
+                                        <constraint firstItem="7QZ-pj-ull" firstAttribute="centerY" secondItem="rsn-lD-LKY" secondAttribute="centerY" id="ZMt-L0-dR5"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7QZ-pj-ull" secondAttribute="trailing" constant="100" id="rm2-p7-bSM"/>
+                                        <constraint firstItem="7QZ-pj-ull" firstAttribute="leading" secondItem="rsn-lD-LKY" secondAttribute="leadingMargin" constant="100" id="z03-UR-ZkC"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dataEntryTextField" destination="7QZ-pj-ull" id="yrU-gn-hgm"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateTimeEntry" rowHeight="227" id="hzg-lA-nWx" customClass="dateTimeEntryCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="100" width="414" height="227"/>
