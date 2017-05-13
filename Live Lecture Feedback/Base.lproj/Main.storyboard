@@ -505,28 +505,34 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateTimeEntry" id="hzg-lA-nWx">
-                                <rect key="frame" x="0.0" y="100" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateTimeEntry" rowHeight="227" id="hzg-lA-nWx" customClass="dateTimeEntryCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="100" width="414" height="227"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hzg-lA-nWx" id="fVR-bl-0Jc">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="226"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DateTime Entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAL-un-1m4">
-                                            <rect key="frame" x="148.66666666666669" y="11" width="117.00000000000006" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OoC-hh-A4s">
+                                            <rect key="frame" x="47" y="5" width="320" height="216"/>
+                                            <date key="date" timeIntervalSinceReferenceDate="516371413.69364899">
+                                                <!--2017-05-13 12:30:13 +0000-->
+                                            </date>
+                                            <connections>
+                                                <action selector="dateTimePicker:" destination="hzg-lA-nWx" eventType="valueChanged" id="7fn-mK-mZp"/>
+                                            </connections>
+                                        </datePicker>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="jAL-un-1m4" firstAttribute="centerX" secondItem="fVR-bl-0Jc" secondAttribute="centerX" id="942-Zs-zBI"/>
-                                        <constraint firstItem="jAL-un-1m4" firstAttribute="centerY" secondItem="fVR-bl-0Jc" secondAttribute="centerY" id="xFR-Qq-UtO"/>
+                                        <constraint firstItem="OoC-hh-A4s" firstAttribute="centerY" secondItem="fVR-bl-0Jc" secondAttribute="centerY" id="Ub8-Ti-9oF"/>
+                                        <constraint firstItem="OoC-hh-A4s" firstAttribute="centerX" secondItem="fVR-bl-0Jc" secondAttribute="centerX" id="tI0-Dk-ufC"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateTimePicker" destination="OoC-hh-A4s" id="chI-Sz-Qll"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SimpleTitle" id="ysk-fL-c90" customClass="SimpleTitleCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="144" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="327" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ysk-fL-c90" id="66M-fE-Tmw">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
@@ -560,7 +566,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3G9-Jw-EK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="1933"/>
+            <point key="canvasLocation" x="1011.5942028985507" y="1932.8804347826087"/>
         </scene>
         <!--Tutor Lecture Status View Controller-->
         <scene sceneID="MkB-yA-uzh">

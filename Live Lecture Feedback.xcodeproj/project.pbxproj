@@ -20,6 +20,7 @@
 		31882F811E8E951E0043CBA1 /* TutorCreateLectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F801E8E951E0043CBA1 /* TutorCreateLectureViewController.swift */; };
 		31882F831E8E95680043CBA1 /* TutorLectureStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F821E8E95680043CBA1 /* TutorLectureStatusViewController.swift */; };
 		318C9C8B1EC7304600C850E6 /* SimpleTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C9C8A1EC7304600C850E6 /* SimpleTitleCell.swift */; };
+		318C9C8D1EC734AB00C850E6 /* dateTimeEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C9C8C1EC734AB00C850E6 /* dateTimeEntryCell.swift */; };
 		5E7B49641276D0ACBBC8CD6D /* Pods_Live_Lecture_Feedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5517A1F727BE3F2167B97DE2 /* Pods_Live_Lecture_Feedback.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		31882F801E8E951E0043CBA1 /* TutorCreateLectureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorCreateLectureViewController.swift; sourceTree = "<group>"; };
 		31882F821E8E95680043CBA1 /* TutorLectureStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorLectureStatusViewController.swift; sourceTree = "<group>"; };
 		318C9C8A1EC7304600C850E6 /* SimpleTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTitleCell.swift; sourceTree = "<group>"; };
+		318C9C8C1EC734AB00C850E6 /* dateTimeEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateTimeEntryCell.swift; sourceTree = "<group>"; };
 		5517A1F727BE3F2167B97DE2 /* Pods_Live_Lecture_Feedback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Live_Lecture_Feedback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80ABBFD82371709AD3A9AC45 /* Pods-Live Lecture Feedback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live Lecture Feedback.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Live Lecture Feedback/Pods-Live Lecture Feedback.debug.xcconfig"; sourceTree = "<group>"; };
 		BA5D9A35DF3B7420C52E458A /* Pods-Live Lecture Feedback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live Lecture Feedback.release.xcconfig"; path = "Pods/Target Support Files/Pods-Live Lecture Feedback/Pods-Live Lecture Feedback.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				31882F821E8E95680043CBA1 /* TutorLectureStatusViewController.swift */,
 				20BF3D501E858090005979F3 /* Main.storyboard */,
 				318C9C8A1EC7304600C850E6 /* SimpleTitleCell.swift */,
+				318C9C8C1EC734AB00C850E6 /* dateTimeEntryCell.swift */,
 				31689B211EC6056C00AC52DC /* LectureTableViewCell.swift */,
 				20BF3D531E858090005979F3 /* Assets.xcassets */,
 				20BF3D551E858090005979F3 /* LaunchScreen.storyboard */,
@@ -243,6 +246,7 @@
 				20BF3D4D1E858090005979F3 /* AppDelegate.swift in Sources */,
 				31689B221EC6056D00AC52DC /* LectureTableViewCell.swift in Sources */,
 				31882F791E8E93780043CBA1 /* SignUpViewController.swift in Sources */,
+				318C9C8D1EC734AB00C850E6 /* dateTimeEntryCell.swift in Sources */,
 				31882F831E8E95680043CBA1 /* TutorLectureStatusViewController.swift in Sources */,
 				31882F7B1E8E940C0043CBA1 /* SessionViewController.swift in Sources */,
 			);
