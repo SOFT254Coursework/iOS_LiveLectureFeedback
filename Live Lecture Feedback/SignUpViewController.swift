@@ -17,6 +17,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     var ref: FIRDatabaseReference!
     
+    var sessionId: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,6 +36,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         guard let sId = txt_sessionId.text, !sId.isEmpty else {
             return
         }
+        
+        sessionId = sId
         
         signUpSession(sessionId: sId)
     }
@@ -53,6 +57,11 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             print(value!)
             self.performSegue(withIdentifier: "SIGNIN", sender: self)
         })
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "SIGNIN") {
+        }
     }
 
     /*
