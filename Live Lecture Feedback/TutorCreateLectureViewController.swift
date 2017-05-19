@@ -11,6 +11,8 @@ import UIKit
 class TutorCreateLectureViewController: UITableViewController {
 
     
+    var sectionState = [false, false, false, false]
+    
     @IBOutlet weak var tutorSetLectureCancelOutlet: UIButton!
     @IBOutlet weak var tutorSetLectureCreteOutlet: UIButton!
     
@@ -32,7 +34,7 @@ class TutorCreateLectureViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return (sectionState[section] ? 2 : 1)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,6 +57,9 @@ class TutorCreateLectureViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Selected row \(indexPath.row) in section \(indexPath.section)")
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        sectionState[indexPath.section] = !sectionState[indexPath.section]
+        self.tableView.reloadData()
     }
     
     /*

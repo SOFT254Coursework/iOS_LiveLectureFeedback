@@ -579,7 +579,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3G9-Jw-EK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="1851"/>
+            <point key="canvasLocation" x="1012" y="2062"/>
         </scene>
         <!--Tutor Lecture Status View Controller-->
         <scene sceneID="MkB-yA-uzh">
@@ -764,9 +764,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="Dl1-2B-IdN">
-                        <barButtonItem key="leftBarButtonItem" title="Lectures" id="GZ5-nS-BlE"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Dl1-2B-IdN"/>
                     <connections>
                         <outlet property="tutorStatusSessionIdOutlet" destination="ksS-U0-7ll" id="eLR-JR-qGS"/>
                         <outlet property="tutorStatusStatusIdOutlet" destination="5sU-Xq-Ohq" id="QpO-Sh-PQF"/>
