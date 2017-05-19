@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="90e-3R-0SY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="90e-3R-0SY">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -56,17 +56,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0K-ZA-Jt7">
-                                <rect key="frame" x="186" y="686" width="42" height="30"/>
-                                <state key="normal" title="TEST!"/>
-                                <connections>
-                                    <action selector="doUITest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LaV-WQ-bah"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bad password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6n5-ky-dNm">
-                                <rect key="frame" x="154" y="296" width="107.33333333333331" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6n5-ky-dNm">
+                                <rect key="frame" x="134" y="296" width="147.33333333333331" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.96623605489999997" green="0.044095950719999999" blue="0.037600737549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="1" green="0.12610571069128329" blue="0.11841207851568103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
@@ -78,7 +71,6 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="XS4-av-TcI" firstAttribute="width" secondItem="Lk8-TG-cp1" secondAttribute="width" id="8Xg-SN-VNh"/>
-                            <constraint firstItem="i0K-ZA-Jt7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9td-nq-4GC"/>
                             <constraint firstItem="VB9-O7-z6v" firstAttribute="centerY" secondItem="XS4-av-TcI" secondAttribute="centerY" id="Elz-Za-Dgs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XS4-av-TcI" secondAttribute="trailing" multiplier="1.1" constant="200" id="FwK-8p-EGO">
                                 <variation key="heightClass=compact-widthClass=compact" constant="90"/>
@@ -102,7 +94,6 @@
                             <constraint firstItem="vuh-fk-EpA" firstAttribute="centerY" secondItem="Lk8-TG-cp1" secondAttribute="centerY" id="iKK-NL-clf"/>
                             <constraint firstItem="Lk8-TG-cp1" firstAttribute="top" secondItem="6n5-ky-dNm" secondAttribute="bottom" constant="10" id="iwp-qn-HD9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Eyi-cc-m5W" secondAttribute="bottom" constant="235" id="mPK-xX-8bT"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i0K-ZA-Jt7" secondAttribute="bottom" constant="20" id="qgH-Oh-rFe"/>
                             <constraint firstItem="XS4-av-TcI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vWI-hP-siY"/>
                         </constraints>
                         <variation key="default">
@@ -121,6 +112,7 @@
                                 <exclude reference="0QQ-nn-Tc3"/>
                                 <exclude reference="Elz-Za-Dgs"/>
                                 <exclude reference="To7-5V-xvt"/>
+                                <exclude reference="mPK-xX-8bT"/>
                                 <exclude reference="8Xg-SN-VNh"/>
                                 <exclude reference="FwK-8p-EGO"/>
                                 <exclude reference="ITT-ZM-CbG"/>
@@ -128,7 +120,6 @@
                                 <exclude reference="vWI-hP-siY"/>
                                 <exclude reference="MGe-jL-IVf"/>
                                 <exclude reference="Tmj-Hk-X9X"/>
-                                <exclude reference="mPK-xX-8bT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -147,6 +138,7 @@
                                 <include reference="0QQ-nn-Tc3"/>
                                 <include reference="Elz-Za-Dgs"/>
                                 <include reference="To7-5V-xvt"/>
+                                <include reference="mPK-xX-8bT"/>
                                 <include reference="8Xg-SN-VNh"/>
                                 <include reference="FwK-8p-EGO"/>
                                 <include reference="ITT-ZM-CbG"/>
@@ -154,7 +146,6 @@
                                 <include reference="vWI-hP-siY"/>
                                 <include reference="MGe-jL-IVf"/>
                                 <include reference="Tmj-Hk-X9X"/>
-                                <include reference="mPK-xX-8bT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -173,6 +164,7 @@
                                 <include reference="0QQ-nn-Tc3"/>
                                 <include reference="Elz-Za-Dgs"/>
                                 <include reference="To7-5V-xvt"/>
+                                <include reference="mPK-xX-8bT"/>
                                 <include reference="8Xg-SN-VNh"/>
                                 <include reference="FwK-8p-EGO"/>
                                 <include reference="ITT-ZM-CbG"/>
@@ -180,7 +172,6 @@
                                 <include reference="vWI-hP-siY"/>
                                 <include reference="MGe-jL-IVf"/>
                                 <include reference="Tmj-Hk-X9X"/>
-                                <include reference="mPK-xX-8bT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -199,6 +190,7 @@
                                 <include reference="0QQ-nn-Tc3"/>
                                 <include reference="Elz-Za-Dgs"/>
                                 <include reference="To7-5V-xvt"/>
+                                <include reference="mPK-xX-8bT"/>
                                 <include reference="8Xg-SN-VNh"/>
                                 <include reference="FwK-8p-EGO"/>
                                 <include reference="ITT-ZM-CbG"/>
@@ -206,7 +198,6 @@
                                 <include reference="vWI-hP-siY"/>
                                 <include reference="MGe-jL-IVf"/>
                                 <include reference="Tmj-Hk-X9X"/>
-                                <include reference="mPK-xX-8bT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -225,6 +216,7 @@
                                 <include reference="0QQ-nn-Tc3"/>
                                 <include reference="Elz-Za-Dgs"/>
                                 <include reference="To7-5V-xvt"/>
+                                <include reference="mPK-xX-8bT"/>
                                 <include reference="8Xg-SN-VNh"/>
                                 <include reference="FwK-8p-EGO"/>
                                 <include reference="ITT-ZM-CbG"/>
@@ -232,7 +224,6 @@
                                 <include reference="vWI-hP-siY"/>
                                 <include reference="MGe-jL-IVf"/>
                                 <include reference="Tmj-Hk-X9X"/>
-                                <include reference="mPK-xX-8bT"/>
                             </mask>
                         </variation>
                     </view>
@@ -242,7 +233,7 @@
                         <outlet property="txt_id" destination="Lk8-TG-cp1" id="jCY-g2-Ie2"/>
                         <outlet property="txt_pwd" destination="XS4-av-TcI" id="Oef-P8-2HS"/>
                         <segue destination="9KN-Cl-dz1" kind="show" identifier="StudentLogin" id="Ya4-Ul-QDF"/>
-                        <segue destination="Coi-89-suH" kind="show" identifier="TutorLogin" id="AAX-Nq-Zft"/>
+                        <segue destination="Coi-89-suH" kind="show" identifier="StaffLogin" id="AAX-Nq-Zft"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -415,7 +406,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V9f-bN-FLC" id="cP3-bD-cxb">
-                                    <rect key="frame" x="0.0" y="0.0" width="381" height="97"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="96.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAu-WC-whg">
@@ -495,10 +486,10 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextEntry" id="jVm-rJ-pMn" customClass="TextEntryCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jVm-rJ-pMn" id="rsn-lD-LKY">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QZ-pj-ull">
@@ -522,10 +513,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateTimeEntry" rowHeight="227" id="hzg-lA-nWx" customClass="dateTimeEntryCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="99" width="414" height="227"/>
+                                <rect key="frame" x="0.0" y="99.5" width="414" height="227"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hzg-lA-nWx" id="fVR-bl-0Jc">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="226"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="227"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OoC-hh-A4s">
@@ -548,10 +539,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SimpleTitle" id="ysk-fL-c90" customClass="SimpleTitleCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="326" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="326.5" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ysk-fL-c90" id="66M-fE-Tmw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPC-yj-sdy">
