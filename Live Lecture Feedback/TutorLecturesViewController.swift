@@ -43,6 +43,7 @@ class TutorLecturesViewController: UITableViewController {
         
         if let nextCell = cell as? LectureTableViewCell {
             nextCell.sessionTitle.text = "Hello World"
+            nextCell.endDate.text = "Monday!"
         }
         return cell
     }
