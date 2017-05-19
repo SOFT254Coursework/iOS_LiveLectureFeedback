@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="90e-3R-0SY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="90e-3R-0SY">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -106,6 +106,8 @@
                                 <exclude reference="6n5-ky-dNm"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="mPK-xX-8bT"/>
+                                <exclude reference="NzF-uy-XwO"/>
                                 <exclude reference="Lrb-m8-ov8"/>
                                 <exclude reference="iKK-NL-clf"/>
                                 <exclude reference="4Oe-GI-1Vn"/>
@@ -113,8 +115,6 @@
                                 <exclude reference="iwp-qn-HD9"/>
                                 <exclude reference="0QQ-nn-Tc3"/>
                                 <exclude reference="Elz-Za-Dgs"/>
-                                <exclude reference="NzF-uy-XwO"/>
-                                <exclude reference="mPK-xX-8bT"/>
                                 <exclude reference="To7-5V-xvt"/>
                                 <exclude reference="8Xg-SN-VNh"/>
                                 <exclude reference="FwK-8p-EGO"/>
@@ -135,6 +135,8 @@
                                 <include reference="6n5-ky-dNm"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="mPK-xX-8bT"/>
+                                <include reference="NzF-uy-XwO"/>
                                 <include reference="Lrb-m8-ov8"/>
                                 <include reference="iKK-NL-clf"/>
                                 <include reference="4Oe-GI-1Vn"/>
@@ -142,8 +144,6 @@
                                 <include reference="iwp-qn-HD9"/>
                                 <include reference="0QQ-nn-Tc3"/>
                                 <include reference="Elz-Za-Dgs"/>
-                                <include reference="NzF-uy-XwO"/>
-                                <include reference="mPK-xX-8bT"/>
                                 <include reference="To7-5V-xvt"/>
                                 <include reference="8Xg-SN-VNh"/>
                                 <include reference="FwK-8p-EGO"/>
@@ -164,6 +164,8 @@
                                 <include reference="6n5-ky-dNm"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="mPK-xX-8bT"/>
+                                <include reference="NzF-uy-XwO"/>
                                 <include reference="Lrb-m8-ov8"/>
                                 <include reference="iKK-NL-clf"/>
                                 <include reference="4Oe-GI-1Vn"/>
@@ -171,8 +173,6 @@
                                 <include reference="iwp-qn-HD9"/>
                                 <include reference="0QQ-nn-Tc3"/>
                                 <include reference="Elz-Za-Dgs"/>
-                                <include reference="NzF-uy-XwO"/>
-                                <include reference="mPK-xX-8bT"/>
                                 <include reference="To7-5V-xvt"/>
                                 <include reference="8Xg-SN-VNh"/>
                                 <include reference="FwK-8p-EGO"/>
@@ -193,6 +193,8 @@
                                 <include reference="6n5-ky-dNm"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="mPK-xX-8bT"/>
+                                <include reference="NzF-uy-XwO"/>
                                 <include reference="Lrb-m8-ov8"/>
                                 <include reference="iKK-NL-clf"/>
                                 <include reference="4Oe-GI-1Vn"/>
@@ -200,8 +202,6 @@
                                 <include reference="iwp-qn-HD9"/>
                                 <include reference="0QQ-nn-Tc3"/>
                                 <include reference="Elz-Za-Dgs"/>
-                                <include reference="NzF-uy-XwO"/>
-                                <include reference="mPK-xX-8bT"/>
                                 <include reference="To7-5V-xvt"/>
                                 <include reference="8Xg-SN-VNh"/>
                                 <include reference="FwK-8p-EGO"/>
@@ -222,6 +222,8 @@
                                 <include reference="6n5-ky-dNm"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="mPK-xX-8bT"/>
+                                <include reference="NzF-uy-XwO"/>
                                 <include reference="Lrb-m8-ov8"/>
                                 <include reference="iKK-NL-clf"/>
                                 <include reference="4Oe-GI-1Vn"/>
@@ -229,8 +231,6 @@
                                 <include reference="iwp-qn-HD9"/>
                                 <include reference="0QQ-nn-Tc3"/>
                                 <include reference="Elz-Za-Dgs"/>
-                                <include reference="NzF-uy-XwO"/>
-                                <include reference="mPK-xX-8bT"/>
                                 <include reference="To7-5V-xvt"/>
                                 <include reference="8Xg-SN-VNh"/>
                                 <include reference="FwK-8p-EGO"/>
@@ -421,7 +421,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V9f-bN-FLC" id="cP3-bD-cxb">
-                                    <rect key="frame" x="0.0" y="0.0" width="381" height="96"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="96.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAu-WC-whg">
@@ -606,10 +606,10 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextEntry" id="jVm-rJ-pMn" customClass="TextEntryCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="56" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jVm-rJ-pMn" id="rsn-lD-LKY">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QZ-pj-ull">
@@ -676,10 +676,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateTimeEntry" rowHeight="227" id="hzg-lA-nWx" customClass="dateTimeEntryCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="100" width="414" height="227"/>
+                                <rect key="frame" x="0.0" y="99.5" width="414" height="227"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hzg-lA-nWx" id="fVR-bl-0Jc">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="226"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="227"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OoC-hh-A4s">
@@ -702,10 +702,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SimpleTitle" id="ysk-fL-c90" customClass="SimpleTitleCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="327" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="326.5" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ysk-fL-c90" id="66M-fE-Tmw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPC-yj-sdy">
@@ -932,7 +932,7 @@
         <!--Session-->
         <scene sceneID="5Lz-ZP-23m">
             <objects>
-                <viewController id="FFr-B7-ubx" customClass="StudentSessionViewController" customModule="Live_Lecture_Feedback" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FFr-B7-ubx" customClass="SessionViewController" customModule="Live_Lecture_Feedback" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r1C-ya-kkO"/>
                         <viewControllerLayoutGuide type="bottom" id="cLA-hD-en2"/>
