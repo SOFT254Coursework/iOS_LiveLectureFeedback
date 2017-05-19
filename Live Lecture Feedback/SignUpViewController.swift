@@ -61,6 +61,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "SIGNIN") {
+            let nextVC = segue.destination as! SessionViewController
+            nextVC.sessionId = sessionId
         }
     }
 

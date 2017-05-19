@@ -13,6 +13,8 @@ class SessionViewController: UIViewController {
     @IBOutlet weak var studentLectureNextOutlet: UIButton!
     @IBOutlet weak var StudentLectureRedButtonOutlet: UIButton!
     
+    var sessionId: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
