@@ -20,8 +20,7 @@ class TutorLecturesViewController: UITableViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: UIBarButtonItemStyle.plain, target: self, action:#selector(addTouched) )
     }
 
-    @IBAction func addTouched(_ sender: Any) {
-        print("Touchy!")
+    @IBAction func addTouched(_ sender: Any) {        
         self.performSegue(withIdentifier: "TutorCreateLecture", sender: self)
     }
     
