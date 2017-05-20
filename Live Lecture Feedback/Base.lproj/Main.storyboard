@@ -605,7 +605,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tGl-36-jIy">
-                            <rect key="frame" x="0.0" y="389" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="388.33333333333337" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Save"/>
                             <connections>
@@ -614,7 +614,7 @@
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextEntry" id="jVm-rJ-pMn" customClass="TextEntryCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="56" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="55" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jVm-rJ-pMn" id="rsn-lD-LKY">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
@@ -691,7 +691,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateTimeEntry" rowHeight="227" id="hzg-lA-nWx" customClass="dateTimeEntryCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="100" width="414" height="227"/>
+                                <rect key="frame" x="0.0" y="99" width="414" height="227"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hzg-lA-nWx" id="fVR-bl-0Jc">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="226"/>
@@ -717,6 +717,7 @@
                                         </mask>
                                         <mask key="constraints">
                                             <exclude reference="Ub8-Ti-9oF"/>
+                                            <exclude reference="tI0-Dk-ufC"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=compact-widthClass=compact">
@@ -725,11 +726,16 @@
                                         </mask>
                                         <mask key="constraints">
                                             <include reference="Ub8-Ti-9oF"/>
+                                            <include reference="tI0-Dk-ufC"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=compact-widthClass=regular">
                                         <mask key="subviews">
                                             <include reference="OoC-hh-A4s"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="Ub8-Ti-9oF"/>
+                                            <include reference="tI0-Dk-ufC"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -738,11 +744,16 @@
                                         </mask>
                                         <mask key="constraints">
                                             <include reference="Ub8-Ti-9oF"/>
+                                            <include reference="tI0-Dk-ufC"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=regular">
                                         <mask key="subviews">
                                             <include reference="OoC-hh-A4s"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="Ub8-Ti-9oF"/>
+                                            <include reference="tI0-Dk-ufC"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -751,7 +762,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SimpleTitle" id="ysk-fL-c90" customClass="SimpleTitleCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="327" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="326" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ysk-fL-c90" id="66M-fE-Tmw">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
@@ -768,6 +779,51 @@
                                         <constraint firstItem="LPC-yj-sdy" firstAttribute="centerY" secondItem="66M-fE-Tmw" secondAttribute="centerY" id="PJC-lV-Ora"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="LPC-yj-sdy" secondAttribute="leading" id="zvi-Ey-UCf"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="LPC-yj-sdy"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="PJC-lV-Ora"/>
+                                            <exclude reference="zvi-Ey-UCf"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=compact-widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="LPC-yj-sdy"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="PJC-lV-Ora"/>
+                                            <include reference="zvi-Ey-UCf"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=compact-widthClass=regular">
+                                        <mask key="subviews">
+                                            <include reference="LPC-yj-sdy"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="PJC-lV-Ora"/>
+                                            <include reference="zvi-Ey-UCf"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="LPC-yj-sdy"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="PJC-lV-Ora"/>
+                                            <include reference="zvi-Ey-UCf"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <mask key="subviews">
+                                            <include reference="LPC-yj-sdy"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="PJC-lV-Ora"/>
+                                            <include reference="zvi-Ey-UCf"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="titleLabel" destination="LPC-yj-sdy" id="ksW-qO-pct"/>
