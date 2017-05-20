@@ -19,6 +19,8 @@ class TutorCreateLectureViewController: UITableViewController {
     var titleCell: TextEntryCell?
     var courseCodeCell : TextEntryCell?
     var simpleTitleCell : SimpleTitleCell?
+    var startDateCell: dateTimeEntryCell?
+    var endDateCell: dateTimeEntryCell?
     
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -44,12 +46,32 @@ class TutorCreateLectureViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let ident : String
         let cell_date : dateTimeEntryCell
+        var count = 1
         
         if (indexPath.row==0) {
             ident = "SimpleTitle"
+            //count += 1
             simpleTitleCell = tableView.dequeueReusableCell(withIdentifier: ident, for: indexPath) as? SimpleTitleCell
-            simpleTitleCell?.titleLabel.text = "Module Code"
-            
+            if count == 1 {
+                simpleTitleCell?.titleLabel.text = "Module Code"
+                count += 1
+                print(count)
+            }
+            //else if count == 2 {
+                //simpleTitleCell?.titleLabel.text = "Module Name"
+                //count += 1
+                //print(count)
+            //}
+            //else if count == 3 {
+                //simpleTitleCell?.titleLabel.text = "Start Date"
+                //count += 1
+                //print(count)
+            //}
+            //else if count == 4 {
+                //simpleTitleCell?.titleLabel.text = "End Date"
+                //count += 1
+                //print(count)
+            //}
         } else {
             if indexPath.section == 0 {
                 ident = "TextEntry"
@@ -62,7 +84,11 @@ class TutorCreateLectureViewController: UITableViewController {
 
                 courseCodeCell?.dataEntryTextField.text = "?"
                 return courseCodeCell!
-
+            } else if indexPath.section == 2{
+                ident = "DateTimeEntry"
+                cell_date = tableView.dequeueReusableCell(withIdentifier: ident, for: indexPath) as! dateTimeEntryCell
+                cell_date.dateTimePicker.date = Date()
+                return cell_date
             } else {
                 ident = "DateTimeEntry"
                 cell_date = tableView.dequeueReusableCell(withIdentifier: ident, for: indexPath) as! dateTimeEntryCell
@@ -71,8 +97,7 @@ class TutorCreateLectureViewController: UITableViewController {
             }
             
         }
-        let cell = tableView.dequeueReusableCell(withIdentifier: ident, for: indexPath)
-        return cell
+        return UITableViewCell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
