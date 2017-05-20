@@ -18,6 +18,7 @@ class TutorCreateLectureViewController: UITableViewController {
     
     var titleCell: TextEntryCell?
     var courseCodeCell : TextEntryCell?
+    var simpleTitleCell : SimpleTitleCell?
     
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -46,6 +47,9 @@ class TutorCreateLectureViewController: UITableViewController {
         
         if (indexPath.row==0) {
             ident = "SimpleTitle"
+            simpleTitleCell = tableView.dequeueReusableCell(withIdentifier: ident, for: indexPath) as? SimpleTitleCell
+            simpleTitleCell?.titleLabel.text = "Module Code"
+            
         } else {
             if indexPath.section == 0 {
                 ident = "TextEntry"
