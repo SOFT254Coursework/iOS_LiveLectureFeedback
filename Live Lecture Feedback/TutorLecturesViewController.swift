@@ -100,6 +100,7 @@ class TutorLecturesViewController: UITableViewController {
     func updateList() {
         let formatter = ISO8601DateFormatter()
         let now = Date()
+        totalSessions = 0
         
         ref?.child("sessions").observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.childrenCount != 0 {

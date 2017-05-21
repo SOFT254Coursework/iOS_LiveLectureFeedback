@@ -13,6 +13,7 @@ class TutorLectureStatusViewController: UIViewController {
     
     var status: Bool!
     var sessionID : String!
+    var warningRate: Double!
     
     @IBOutlet weak var lbl_title: UILabel!
     @IBOutlet weak var lbl_status: UILabel!
@@ -38,12 +39,24 @@ class TutorLectureStatusViewController: UIViewController {
             let value = snapshot.value
             self.status = (value as AnyObject)["running"] as! Bool
             if self.status {
-                self.btn_start.isEnabled = false
+                self.btn_start.titleLabel?.text = "Stop"
                 self.lbl_status.text = "On going"
             }
             self.lbl_courseCode.text = (value as AnyObject)["course_code"] as? String ?? ""
             self.lbl_title.text = (value as AnyObject)["title"] as? String ?? ""
-            
+            self.warningRate = (value as AnyObject)["warning_rate"] as? Double ?? 0.0
+        })
+        
+        ref.child("sessions").child(sessionID).observe(FIRDataEventType.value, with: { (snapshot) in
+            let value = snapshot.value
+            let participants = (value as AnyObject)["participants"] as! Int
+            let question = (value as AnyObject)["question"] as! Int
+            if (question != 0) && (participants != 0) {
+                if Double(question) > (Double(participants) * self.warningRate) {
+                    self.lbl_status.text = "\(question) out of \(participants) students got question"
+                    self.lbl_status.textColor = UIColor.red
+                }
+            }
             
         })
     }
@@ -54,12 +67,25 @@ class TutorLectureStatusViewController: UIViewController {
     }
 
     @IBAction func start(_ sender: Any) {
-        status = true
-        btn_start.isEnabled = false
-        lbl_status.text = "On going"
-        print(sessionID)
-        ref.child("sessions").child(sessionID).child("running").setValue(true)
+        if (!status) {
+            status = true
+            lbl_status.text = "On going"
+            btn_start.titleLabel?.text = "Stop"
+            ref.child("sessions").child(sessionID).child("running").setValue(true)
+        } else {
+            status = false
+            lbl_status.text = "Inactive"
+            btn_start.titleLabel?.text = "Start"
+            ref.child("sessions").child(sessionID).child("running").setValue(false)
+        }
     }
+    
+    @IBAction func reset(_ sender: Any) {
+        ref.child("sessions").child(sessionID).child("question").setValue(0)
+        lbl_status.textColor = UIColor.darkText
+        lbl_status.text = "On going"
+    }
+    
     /*
     // MARK: - Navigation
 

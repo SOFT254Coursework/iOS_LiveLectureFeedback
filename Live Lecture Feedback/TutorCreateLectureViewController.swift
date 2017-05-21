@@ -141,7 +141,7 @@ class TutorCreateLectureViewController: UITableViewController {
                     "start_time": formatter.string(from: startTime),
                     "end_time": formatter.string(from: endTime),
                     "participants": 0,
-                    "question": false,
+                    "question": 0,
                     "running": false,
                     "title": title,
                     "warning_rate": 0.5])

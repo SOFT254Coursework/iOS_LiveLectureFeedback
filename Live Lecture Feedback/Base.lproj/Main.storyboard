@@ -883,6 +883,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbG-HU-MHp">
                                 <rect key="frame" x="107" y="318" width="200" height="100"/>
                                 <state key="normal" image="ResetButton"/>
+                                <connections>
+                                    <action selector="reset:" destination="9xR-Xk-1pM" eventType="touchDown" id="9zM-SI-zJ5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abc123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksS-U0-7ll">
                                 <rect key="frame" x="179" y="499" width="56" height="21"/>
