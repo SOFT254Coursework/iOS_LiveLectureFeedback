@@ -77,6 +77,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             nextVC.sessionId = sessionId
             nextVC.courseCode = courseCode
             nextVC.sessionTitle = sessionTitle
+            nextVC.studentId = studentId
         }
     }
 

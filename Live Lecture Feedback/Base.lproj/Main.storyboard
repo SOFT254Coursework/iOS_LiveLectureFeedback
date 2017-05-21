@@ -1090,6 +1090,9 @@
                                         <include reference="TlF-Ba-rWJ"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="onSubmitClick:" destination="FFr-B7-ubx" eventType="touchDown" id="3he-ZZ-3SU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1197,6 +1200,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Session" id="b8D-Lt-8R6"/>
                     <connections>
+                        <outlet property="btn_submit" destination="crS-rf-qPy" id="TC5-y4-MXH"/>
                         <outlet property="lbl_courseCode" destination="FZD-5T-4nS" id="F4E-Sw-U8v"/>
                         <outlet property="lbl_title" destination="7gl-0p-IDe" id="dOa-SL-ZKy"/>
                     </connections>

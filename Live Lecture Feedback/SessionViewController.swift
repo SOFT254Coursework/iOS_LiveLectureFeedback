@@ -12,11 +12,14 @@ class SessionViewController: UIViewController {
 
     @IBOutlet weak var lbl_courseCode: UILabel!
     @IBOutlet weak var lbl_title: UILabel!
-    
+    @IBOutlet weak var btn_submit: UIButton!
     
     var sessionId: String!
     var courseCode: String!
     var sessionTitle: String!
+    var studentId: String!
+    
+    var question = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +34,15 @@ class SessionViewController: UIViewController {
     }
     
 
+    @IBAction func onSubmitClick(_ sender: Any) {
+        if !question {
+            question = true
+            btn_submit.setImage(#imageLiteral(resourceName: "RedButtonPressed"), for: UIControlState.normal)
+        } else {
+            question = false
+            btn_submit.setImage(#imageLiteral(resourceName: "RedButton"), for: UIControlState.normal)
+        }
+    }
     
     
 
