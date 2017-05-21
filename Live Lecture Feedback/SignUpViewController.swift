@@ -13,15 +13,15 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var txt_sessionId: UITextField!
     
-    var studentId: String?
+    var studentId: String!
     
     let limitLength = 6
     
     var ref: FIRDatabaseReference!
     
-    var sessionId: String?
-    var sessionTitle: String?
-    var courseCode: String?
+    var sessionId: String!
+    var sessionTitle: String!
+    var courseCode: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()

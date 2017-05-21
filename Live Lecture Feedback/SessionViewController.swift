@@ -44,12 +44,12 @@ class SessionViewController: UIViewController {
             question = true
             btn_submit.setImage(#imageLiteral(resourceName: "RedButtonPressed"), for: UIControlState.normal)
             
-            ref.child("participants/\(sessionId)/\(studentId)").setValue(["question": true])
+            ref.child("participants/\(sessionId!)/\(studentId!)").setValue(["question": true])
         } else {
             question = false
             btn_submit.setImage(#imageLiteral(resourceName: "RedButton"), for: UIControlState.normal)
             
-            ref.child("participants/\(sessionId)/\(studentId)").setValue(["question": false])
+            ref.child("participants/\(sessionId!)/\(studentId!)").setValue(["question": false])
         }
     }
     

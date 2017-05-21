@@ -61,7 +61,7 @@ class TutorLecturesViewController: UITableViewController {
         
         let formatter = ISO8601DateFormatter()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
         
         if let nextCell = cell as? LectureTableViewCell {
             let value = sessions[indexPath.row]
