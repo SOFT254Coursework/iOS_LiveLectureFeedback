@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class SessionViewController: UIViewController {
 
@@ -21,11 +22,15 @@ class SessionViewController: UIViewController {
     
     var question = false
     
+    var ref: FIRDatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         lbl_courseCode.text = courseCode
         lbl_title.text = sessionTitle
+        
+        ref = FIRDatabase.database().reference()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,9 +43,13 @@ class SessionViewController: UIViewController {
         if !question {
             question = true
             btn_submit.setImage(#imageLiteral(resourceName: "RedButtonPressed"), for: UIControlState.normal)
+            
+            ref.child("participants/\(sessionId)/\(studentId)").setValue(["question": true])
         } else {
             question = false
             btn_submit.setImage(#imageLiteral(resourceName: "RedButton"), for: UIControlState.normal)
+            
+            ref.child("participants/\(sessionId)/\(studentId)").setValue(["question": false])
         }
     }
     
