@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="90e-3R-0SY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="90e-3R-0SY">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -421,7 +421,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V9f-bN-FLC" id="cP3-bD-cxb">
-                                    <rect key="frame" x="0.0" y="0.0" width="381" height="96.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="96"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAu-WC-whg">
@@ -605,7 +605,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tGl-36-jIy">
-                            <rect key="frame" x="0.0" y="388.33333333333337" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="389" width="414" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Save"/>
                             <connections>
@@ -614,10 +614,10 @@
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextEntry" id="jVm-rJ-pMn" customClass="TextEntryCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jVm-rJ-pMn" id="rsn-lD-LKY">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QZ-pj-ull">
@@ -691,10 +691,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateTimeEntry" rowHeight="227" id="hzg-lA-nWx" customClass="dateTimeEntryCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="99.5" width="414" height="227"/>
+                                <rect key="frame" x="0.0" y="100" width="414" height="227"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hzg-lA-nWx" id="fVR-bl-0Jc">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="227"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="226"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OoC-hh-A4s">
@@ -762,10 +762,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SimpleTitle" id="ysk-fL-c90" customClass="SimpleTitleCell" customModule="Live_Lecture_Feedback" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="326.5" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="327" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ysk-fL-c90" id="66M-fE-Tmw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPC-yj-sdy">
@@ -842,7 +842,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3G9-Jw-EK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="2092"/>
+            <point key="canvasLocation" x="1011.5942028985507" y="2091.8478260869565"/>
         </scene>
         <!--Tutor Lecture Status View Controller-->
         <scene sceneID="MkB-yA-uzh">
@@ -857,7 +857,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNZ-Fx-ONu">
-                                <rect key="frame" x="112" y="72" width="191" height="36"/>
+                                <rect key="frame" x="112" y="28" width="191" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -869,13 +869,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SC9-bp-fIm">
-                                <rect key="frame" x="20" y="147" width="50" height="21"/>
+                                <rect key="frame" x="20" y="103" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sU-Xq-Ohq">
-                                <rect key="frame" x="20" y="186" width="70" height="21"/>
+                                <rect key="frame" x="20" y="142" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -890,6 +890,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avF-Iq-EFO">
+                                <rect key="frame" x="190" y="656" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to reset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1U-ue-SLO">
+                                <rect key="frame" x="137.66666666666663" y="279.33333333333326" width="139.33333333333337" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -897,7 +907,10 @@
                             <constraint firstItem="9sc-53-QqN" firstAttribute="centerX" secondItem="HbG-HU-MHp" secondAttribute="centerX" id="2ny-4Q-1rf"/>
                             <constraint firstItem="ksS-U0-7ll" firstAttribute="top" secondItem="9sc-53-QqN" secondAttribute="bottom" constant="10" id="4Hk-ls-WCn"/>
                             <constraint firstItem="9sc-53-QqN" firstAttribute="top" secondItem="HbG-HU-MHp" secondAttribute="bottom" constant="50" id="79h-nC-Id9"/>
+                            <constraint firstItem="J1U-ue-SLO" firstAttribute="centerX" secondItem="KZ8-t3-bLN" secondAttribute="centerX" id="7TM-mu-er3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="SC9-bp-fIm" secondAttribute="leading" id="7eL-Ve-WSF"/>
+                            <constraint firstItem="lvc-tv-bm4" firstAttribute="top" secondItem="avF-Iq-EFO" secondAttribute="bottom" constant="50" id="9lJ-3Z-MvK"/>
+                            <constraint firstItem="HbG-HU-MHp" firstAttribute="top" secondItem="J1U-ue-SLO" secondAttribute="bottom" constant="10" id="FD4-5D-NvN"/>
                             <constraint firstItem="SC9-bp-fIm" firstAttribute="top" secondItem="oNZ-Fx-ONu" secondAttribute="bottom" constant="39" id="GbK-M7-qBF"/>
                             <constraint firstItem="HbG-HU-MHp" firstAttribute="centerY" secondItem="KZ8-t3-bLN" secondAttribute="centerY" id="OtG-Mg-Lv7"/>
                             <constraint firstAttribute="leadingMargin" secondItem="5sU-Xq-Ohq" secondAttribute="leading" id="b8D-CZ-5lG"/>
@@ -905,6 +918,7 @@
                             <constraint firstItem="oNZ-Fx-ONu" firstAttribute="centerX" secondItem="KZ8-t3-bLN" secondAttribute="centerX" id="j2L-UE-Nh4"/>
                             <constraint firstItem="ksS-U0-7ll" firstAttribute="centerX" secondItem="9sc-53-QqN" secondAttribute="centerX" id="o91-hL-ccP"/>
                             <constraint firstItem="oNZ-Fx-ONu" firstAttribute="top" secondItem="Tcr-G2-z7V" secondAttribute="bottom" constant="8" id="ooL-Fh-w7u"/>
+                            <constraint firstItem="avF-Iq-EFO" firstAttribute="centerX" secondItem="KZ8-t3-bLN" secondAttribute="centerX" id="zIH-EK-CWm"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -916,10 +930,10 @@
                                 <exclude reference="ksS-U0-7ll"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="j2L-UE-Nh4"/>
-                                <exclude reference="ooL-Fh-w7u"/>
                                 <exclude reference="7eL-Ve-WSF"/>
                                 <exclude reference="GbK-M7-qBF"/>
+                                <exclude reference="j2L-UE-Nh4"/>
+                                <exclude reference="ooL-Fh-w7u"/>
                                 <exclude reference="b8D-CZ-5lG"/>
                                 <exclude reference="e4I-A6-rFO"/>
                                 <exclude reference="14V-GB-Hie"/>
@@ -940,10 +954,10 @@
                                 <include reference="ksS-U0-7ll"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="j2L-UE-Nh4"/>
-                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="7eL-Ve-WSF"/>
                                 <include reference="GbK-M7-qBF"/>
+                                <include reference="j2L-UE-Nh4"/>
+                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="b8D-CZ-5lG"/>
                                 <include reference="e4I-A6-rFO"/>
                                 <include reference="14V-GB-Hie"/>
@@ -964,10 +978,10 @@
                                 <include reference="ksS-U0-7ll"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="j2L-UE-Nh4"/>
-                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="7eL-Ve-WSF"/>
                                 <include reference="GbK-M7-qBF"/>
+                                <include reference="j2L-UE-Nh4"/>
+                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="b8D-CZ-5lG"/>
                                 <include reference="e4I-A6-rFO"/>
                                 <include reference="14V-GB-Hie"/>
@@ -988,10 +1002,10 @@
                                 <include reference="ksS-U0-7ll"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="j2L-UE-Nh4"/>
-                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="7eL-Ve-WSF"/>
                                 <include reference="GbK-M7-qBF"/>
+                                <include reference="j2L-UE-Nh4"/>
+                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="b8D-CZ-5lG"/>
                                 <include reference="e4I-A6-rFO"/>
                                 <include reference="14V-GB-Hie"/>
@@ -1012,10 +1026,10 @@
                                 <include reference="ksS-U0-7ll"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="j2L-UE-Nh4"/>
-                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="7eL-Ve-WSF"/>
                                 <include reference="GbK-M7-qBF"/>
+                                <include reference="j2L-UE-Nh4"/>
+                                <include reference="ooL-Fh-w7u"/>
                                 <include reference="b8D-CZ-5lG"/>
                                 <include reference="e4I-A6-rFO"/>
                                 <include reference="14V-GB-Hie"/>
@@ -1036,7 +1050,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsv-ON-5Sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781" y="1490"/>
+            <point key="canvasLocation" x="1779.7101449275365" y="1489.4021739130435"/>
         </scene>
         <!--Session-->
         <scene sceneID="5Lz-ZP-23m">
