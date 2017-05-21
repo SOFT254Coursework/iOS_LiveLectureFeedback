@@ -79,7 +79,12 @@ class TutorLecturesViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         
+        let cell = tableView.cellForRow(at: indexPath) as! LectureTableViewCell
+        
+        selectedSessionId = cell.sessionId
+        performSegue(withIdentifier: "ShowSession", sender: Any?.self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
