@@ -18,7 +18,6 @@ class TutorCreateLectureViewController: UITableViewController {
     
     var titleCell: TextEntryCell?
     var courseCodeCell : TextEntryCell?
-    var simpleTitleCell : SimpleTitleCell?
     var startDateCell: dateTimeEntryCell?
     var endDateCell: dateTimeEntryCell?
     
@@ -46,60 +45,46 @@ class TutorCreateLectureViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let ident : String
-        var count = 1
+        var ident = ""
+        let simpleTitleCell: SimpleTitleCell
         
         if (indexPath.row==0) {
             ident = "SimpleTitle"
-            //count += 1
-            simpleTitleCell = tableView.dequeueReusableCell(withIdentifier: ident, for: indexPath) as? SimpleTitleCell
-            if count == 1 {
-                simpleTitleCell?.titleLabel.text = "Module Code"
-                count += 1
-                print(count)
+            simpleTitleCell = tableView.dequeueReusableCell(withIdentifier: ident) as! SimpleTitleCell
+            switch indexPath.section {
+            case 0:
+                simpleTitleCell.textLabel?.text = "Module Code"
+            case 1:
+                simpleTitleCell.textLabel?.text = "Session Title"
+            case 2:
+                simpleTitleCell.textLabel?.text = "Start"
+            case 3:
+                simpleTitleCell.textLabel?.text = "End"
+            default:
+                break
             }
-            //else if count == 2 {
-                //simpleTitleCell?.titleLabel.text = "Module Name"
-                //count += 1
-                //print(count)
-            //}
-            //else if count == 3 {
-                //simpleTitleCell?.titleLabel.text = "Start Date"
-                //count += 1
-                //print(count)
-            //}
-            //else if count == 4 {
-                //simpleTitleCell?.titleLabel.text = "End Date"
-                //count += 1
-                //print(count)
-            //}
+            return simpleTitleCell
         } else {
             if indexPath.section == 0 {
                 ident = "TextEntry"
-                titleCell = tableView.dequeueReusableCell(withIdentifier: ident, for: indexPath) as? TextEntryCell
-                titleCell?.dataEntryTextField.text = "Text"
+                titleCell = tableView.dequeueReusableCell(withIdentifier: ident) as? TextEntryCell
                 return titleCell!
             } else if indexPath.section == 1 {
                 ident = "TextEntry"
-                courseCodeCell = tableView.dequeueReusableCell(withIdentifier: ident, for: indexPath) as? TextEntryCell
-
-                courseCodeCell?.dataEntryTextField.text = "?"
+                courseCodeCell = tableView.dequeueReusableCell(withIdentifier: ident) as? TextEntryCell
                 return courseCodeCell!
             } else if indexPath.section == 2{
                 ident = "DateTimeEntry"
-                startDateCell = tableView.dequeueReusableCell(withIdentifier: ident, for: indexPath) as? dateTimeEntryCell
+                startDateCell = tableView.dequeueReusableCell(withIdentifier: ident) as? dateTimeEntryCell
                 startDateCell?.dateTimePicker.date = Date()
                 return startDateCell!
             } else {
                 ident = "DateTimeEntry"
-                endDateCell = tableView.dequeueReusableCell(withIdentifier: ident, for: indexPath) as? dateTimeEntryCell
+                endDateCell = tableView.dequeueReusableCell(withIdentifier: ident) as? dateTimeEntryCell
                 endDateCell?.dateTimePicker.date = Date()
                 return endDateCell!
             }
-            
-        }
-        let cell = tableView.dequeueReusableCell(withIdentifier: ident, for: indexPath)
-        return cell
+        } // end else
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
