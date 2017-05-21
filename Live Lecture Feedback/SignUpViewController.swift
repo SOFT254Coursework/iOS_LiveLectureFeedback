@@ -20,6 +20,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     var ref: FIRDatabaseReference!
     
     var sessionId: String?
+    var sessionTitle: String?
+    var courseCode: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +61,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             value = snapshot.value as? NSDictionary
             if value != nil {
                 self.ref.child("participants/\(sessionId)/\(self.studentId!)").setValue(["question": false])
+                self.sessionTitle = value?["title"] as? String ?? ""
+                self.courseCode = value?["course_code"] as? String ?? ""
             
             self.performSegue(withIdentifier: "SIGNIN", sender: self)
             }
@@ -71,6 +75,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         if (segue.identifier == "SIGNIN") {
             let nextVC = segue.destination as! SessionViewController
             nextVC.sessionId = sessionId
+            nextVC.courseCode = courseCode
+            nextVC.sessionTitle = sessionTitle
         }
     }
 

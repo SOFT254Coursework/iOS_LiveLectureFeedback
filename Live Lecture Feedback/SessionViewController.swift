@@ -10,15 +10,19 @@ import UIKit
 
 class SessionViewController: UIViewController {
 
-    @IBOutlet weak var studentLectureNextOutlet: UIButton!
-    @IBOutlet weak var StudentLectureRedButtonOutlet: UIButton!
+    @IBOutlet weak var lbl_courseCode: UILabel!
+    @IBOutlet weak var lbl_title: UILabel!
+    
     
     var sessionId: String!
+    var courseCode: String!
+    var sessionTitle: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        lbl_courseCode.text = courseCode
+        lbl_title.text = sessionTitle
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,11 +30,7 @@ class SessionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func studentLectureNextAction(_ sender: Any) {
-    }
-    
-    @IBAction func StudentLectureRedButtonAction(_ sender: Any) {
-    }
+
     
     
 
