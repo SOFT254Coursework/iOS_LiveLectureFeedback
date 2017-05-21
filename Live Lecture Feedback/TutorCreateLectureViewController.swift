@@ -22,7 +22,7 @@ class TutorCreateLectureViewController: UITableViewController {
     var startDateCell: dateTimeEntryCell?
     var endDateCell: dateTimeEntryCell?
     
-    var staffId: String?
+    var staffId: String!
     
     var ref: FIRDatabaseReference!
     
@@ -78,12 +78,10 @@ class TutorCreateLectureViewController: UITableViewController {
             } else if indexPath.section == 2{
                 ident = "DateTimeEntry"
                 startDateCell = tableView.dequeueReusableCell(withIdentifier: ident) as? dateTimeEntryCell
-                startDateCell?.dateTimePicker.date = Date()
                 return startDateCell!
             } else {
                 ident = "DateTimeEntry"
                 endDateCell = tableView.dequeueReusableCell(withIdentifier: ident) as? dateTimeEntryCell
-                endDateCell?.dateTimePicker.date = Date()
                 return endDateCell!
             }
         } // end else
@@ -105,14 +103,64 @@ class TutorCreateLectureViewController: UITableViewController {
         guard let title = titleCell?.dataEntryTextField.text, !title.isEmpty else {
             return
         }
-        guard let startDate = startDateCell?.dateTimePicker.date, startDate > Date() else {
+        guard let startTime = startDateCell?.dateTimePicker.date, startTime > Date() else {
             return
         }
-        guard let endDate = endDateCell?.dateTimePicker.date, endDate < startDate else {
+        guard let endTime = endDateCell?.dateTimePicker.date, endTime > startTime else {
             return
         }
         
+        ref.child("sessions").queryOrderedByKey().queryLimited(toLast: 1).observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            if value != nil {
+                var lastSessionId: String = ""
+                for key in (value?.allKeys)! {
+                    lastSessionId = key as! String
+                }
+                let index = lastSessionId.index(lastSessionId.startIndex, offsetBy: 1)
+                var char = lastSessionId.substring(to: index)
+                var numbers = lastSessionId.substring(from: index)
+                if numbers == "99999" {
+                    char = self.nextLetter(char)!
+                    numbers = "00000"
+                } else {
+                    let intValue = Int(numbers)! + 1
+                    let tempNum = "\(intValue)"
+                    var finalNum = tempNum
+                    if tempNum.characters.count < 5 {
+                        for _ in tempNum.characters.count ... 4 {
+                            finalNum = "0" + finalNum
+                        }
+                        numbers = finalNum
+                    } // end if
+                } // end else
+                let formatter = ISO8601DateFormatter()
+                self.ref.child("sessions/\(char + numbers)").setValue([
+                    "course_code": courseCode.uppercased().trim(),
+                    "creator": self.staffId,
+                    "start_time": formatter.string(from: startTime),
+                    "end_time": formatter.string(from: endTime),
+                    "participants": 0,
+                    "question": false,
+                    "running": false,
+                    "title": title,
+                    "warning_rate": 0.5])
+            } // end if
+        }) // end set value
+    }
+    
+    func nextLetter(_ letter: String) -> String? {
         
+        // Check if string is build from exactly one Unicode scalar:
+        guard let uniCode = UnicodeScalar(letter) else {
+            return nil
+        }
+        switch uniCode {
+        case "A" ..< "Z":
+            return String(UnicodeScalar(uniCode.value + 1)!)
+        default:
+            return nil
+        }
     }
     /*
     // MARK: - Navigation

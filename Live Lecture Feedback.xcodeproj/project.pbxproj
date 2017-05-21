@@ -13,6 +13,7 @@
 		20BF3D521E858090005979F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BF3D501E858090005979F3 /* Main.storyboard */; };
 		20BF3D541E858090005979F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BF3D531E858090005979F3 /* Assets.xcassets */; };
 		20BF3D571E858090005979F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BF3D551E858090005979F3 /* LaunchScreen.storyboard */; };
+		20EECF651ED1A685001DA044 /* StringTrim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EECF641ED1A685001DA044 /* StringTrim.swift */; };
 		31689B221EC6056D00AC52DC /* LectureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31689B211EC6056C00AC52DC /* LectureTableViewCell.swift */; };
 		31882F791E8E93780043CBA1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F781E8E93780043CBA1 /* SignUpViewController.swift */; };
 		31882F7B1E8E940C0043CBA1 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31882F7A1E8E940C0043CBA1 /* SessionViewController.swift */; };
@@ -34,6 +35,7 @@
 		20BF3D531E858090005979F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20BF3D561E858090005979F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20BF3D581E858090005979F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20EECF641ED1A685001DA044 /* StringTrim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringTrim.swift; path = Extension/StringTrim.swift; sourceTree = "<group>"; };
 		31689B211EC6056C00AC52DC /* LectureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectureTableViewCell.swift; sourceTree = "<group>"; };
 		31882F781E8E93780043CBA1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		31882F7A1E8E940C0043CBA1 /* SessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		20BF3D4B1E858090005979F3 /* Live Lecture Feedback */ = {
 			isa = PBXGroup;
 			children = (
+				20EECF631ED1A635001DA044 /* Extension */,
 				20A88C481EB8BABB00A72B5C /* GoogleService-Info.plist */,
 				20BF3D4C1E858090005979F3 /* AppDelegate.swift */,
 				20BF3D4E1E858090005979F3 /* LoginViewController.swift */,
@@ -99,6 +102,14 @@
 				20BF3D581E858090005979F3 /* Info.plist */,
 			);
 			path = "Live Lecture Feedback";
+			sourceTree = "<group>";
+		};
+		20EECF631ED1A635001DA044 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				20EECF641ED1A685001DA044 /* StringTrim.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		4A9979D15036467C169ABF80 /* Frameworks */ = {
@@ -252,6 +263,7 @@
 				31882F791E8E93780043CBA1 /* SignUpViewController.swift in Sources */,
 				318C9C8D1EC734AB00C850E6 /* dateTimeEntryCell.swift in Sources */,
 				31882F831E8E95680043CBA1 /* TutorLectureStatusViewController.swift in Sources */,
+				20EECF651ED1A685001DA044 /* StringTrim.swift in Sources */,
 				31882F7B1E8E940C0043CBA1 /* SessionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

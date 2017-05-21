@@ -89,6 +89,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if segue.identifier == "StudentLogin" {
             let nextVC = segue.destination as! SignUpViewController
             nextVC.studentId = txt_id.text
+        } else if segue.identifier == "StaffLogin" {
+            let nextVC = segue.destination as! TutorLecturesViewController
+            nextVC.staffId = txt_id.text
         }
     }
 }
