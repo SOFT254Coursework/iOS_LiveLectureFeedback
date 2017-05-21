@@ -10,8 +10,8 @@ import UIKit
 
 class TutorLectureStatusViewController: UIViewController {
     
-    var tstatusId : String?
-    var tSessionID : String?
+    var status : String?
+    var sessionID : String!
 
     @IBOutlet weak var tutorStatusStatusOutlet: UILabel!
     @IBOutlet weak var tutorStatusStatusIdOutlet: UILabel!

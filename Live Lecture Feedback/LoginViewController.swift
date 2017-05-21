@@ -16,7 +16,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txt_pwd: UITextField!
     @IBOutlet weak var btn_login: UIButton!
     
-    var sessions: [NSDictionary]?
+    var sessions = [NSDictionary]()
+    var sessionIds = [String]()
     var totalSessions: Int!
     
     //TODO: Get rid of this
@@ -80,29 +81,30 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 switch userType {
                 case "staff":
                     
-                    let formatter = ISO8601DateFormatter()
-                    let now = Date()
-                    
-                    self.ref.child("sessions").observeSingleEvent(of: .value, with: { (snapshot) in
-                        if snapshot.childrenCount != 0 {
-                            for rest in snapshot.children.allObjects as! [FIRDataSnapshot] {
-                                let value = rest.value as? NSDictionary
-                                if value?["creator"] as? String ?? "" == id {
-                                    let endTime = value?["end_time"] as? String ?? ""
-                                    if endTime != "" {
-                                        let result = formatter.date(from: endTime)! > now
-                                        if result {
-                                            self.totalSessions! += 1
-                                            self.sessions?.append(value!)
-                                            print(self.totalSessions)
-                                        } // end if result
-                                    } // end if endTime != ""
-                                } // end if creator == staffId
-                            } // end for
-                        } // end if
-                        
+//                    let formatter = ISO8601DateFormatter()
+//                    let now = Date()
+//                    
+//                    self.ref.child("sessions").observeSingleEvent(of: .value, with: { (snapshot) in
+//                        if snapshot.childrenCount != 0 {
+//                            for rest in snapshot.children.allObjects as! [FIRDataSnapshot] {
+//                                let value = rest.value as? NSDictionary
+//                                if value?["creator"] as? String ?? "" == id {
+//                                    let endTime = value?["end_time"] as? String ?? ""
+//                                    if endTime != "" {
+//                                        let result = formatter.date(from: endTime)! > now
+//                                        if result {
+//                                            self.totalSessions! += 1
+//                                            let id = snapshot.key
+//                                            self.sessionIds.append(id)
+//                                            self.sessions.append(value!)
+//                                            print(self.totalSessions)
+//                                        } // end if result
+//                                    } // end if endTime != ""
+//                                } // end if creator == staffId
+//                            } // end for
+//                        } // end if
                         self.performSegue(withIdentifier: "StaffLogin", sender: self)
-                    })
+//                    })
                 case "student":
                     self.performSegue(withIdentifier: "StudentLogin", sender: self)
                 default:
@@ -119,8 +121,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         } else if segue.identifier == "StaffLogin" {
             let nextVC = segue.destination as! TutorLecturesViewController
             nextVC.staffId = txt_id.text
-            nextVC.sessions = sessions
-            nextVC.totalSessions = totalSessions
+//            nextVC.sessions = sessions
+//            nextVC.sessionIds = sessionIds
+//            nextVC.totalSessions = totalSessions
         }
     }
 }

@@ -577,7 +577,6 @@
                                     <outlet property="endDate" destination="PP2-67-x0H" id="8Gv-Gf-4i2"/>
                                     <outlet property="sessionTitle" destination="bAu-WC-whg" id="Cvl-17-9lA"/>
                                     <outlet property="startDate" destination="oTi-bf-oJx" id="j3U-Jz-ito"/>
-                                    <segue destination="9xR-Xk-1pM" kind="show" identifier="SessionName2" id="Ooh-zO-2fT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -590,6 +589,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="ulC-Le-YF2" kind="show" identifier="TutorCreateLecture" id="Dd1-md-6Ki"/>
+                        <segue destination="9xR-Xk-1pM" kind="show" identifier="ShowSession" id="sSw-Oc-Jrd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0MI-H1-xXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
