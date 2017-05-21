@@ -14,6 +14,8 @@ class LectureTableViewCell: UITableViewCell {
     @IBOutlet weak var startDate: UILabel!
     @IBOutlet weak var endDate: UILabel!
     
+    var sessionId: String?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

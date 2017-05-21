@@ -137,7 +137,7 @@ class TutorCreateLectureViewController: UITableViewController {
                 let formatter = ISO8601DateFormatter()
                 self.ref.child("sessions/\(char + numbers)").setValue([
                     "course_code": courseCode.uppercased().trim(),
-                    "creator": self.staffId,
+                    "creator": self.staffId as String,
                     "start_time": formatter.string(from: startTime),
                     "end_time": formatter.string(from: endTime),
                     "participants": 0,

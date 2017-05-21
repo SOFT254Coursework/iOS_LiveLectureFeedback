@@ -14,9 +14,12 @@ class TutorLecturesViewController: UITableViewController {
     @IBOutlet weak var tutorLecturesExitOutlet: UIButton!
     @IBOutlet weak var tutorLecturesCreateOutlet: UIButton!
     
-    var staffId: String?
+    var staffId: String!
     
     var ref: FIRDatabaseReference?
+    
+    var totalSessions: Int = 0
+    var sessions: [NSDictionary]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +44,7 @@ class TutorLecturesViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3 //To be replaced by an int variable which will get it's value from the database.
+        return totalSessions
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,6 +55,9 @@ class TutorLecturesViewController: UITableViewController {
             nextCell.sessionTitle.text = "Hello World"
             nextCell.endDate.text = "Monday!"
         }
+        
+        print(indexPath)
+        
         return cell
     }
     
