@@ -894,6 +894,12 @@
                                 <rect key="frame" x="190" y="656" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to reset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1U-ue-SLO">
+                                <rect key="frame" x="137.66666666666663" y="279.33333333333326" width="139.33333333333337" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -901,8 +907,10 @@
                             <constraint firstItem="9sc-53-QqN" firstAttribute="centerX" secondItem="HbG-HU-MHp" secondAttribute="centerX" id="2ny-4Q-1rf"/>
                             <constraint firstItem="ksS-U0-7ll" firstAttribute="top" secondItem="9sc-53-QqN" secondAttribute="bottom" constant="10" id="4Hk-ls-WCn"/>
                             <constraint firstItem="9sc-53-QqN" firstAttribute="top" secondItem="HbG-HU-MHp" secondAttribute="bottom" constant="50" id="79h-nC-Id9"/>
+                            <constraint firstItem="J1U-ue-SLO" firstAttribute="centerX" secondItem="KZ8-t3-bLN" secondAttribute="centerX" id="7TM-mu-er3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="SC9-bp-fIm" secondAttribute="leading" id="7eL-Ve-WSF"/>
                             <constraint firstItem="lvc-tv-bm4" firstAttribute="top" secondItem="avF-Iq-EFO" secondAttribute="bottom" constant="50" id="9lJ-3Z-MvK"/>
+                            <constraint firstItem="HbG-HU-MHp" firstAttribute="top" secondItem="J1U-ue-SLO" secondAttribute="bottom" constant="10" id="FD4-5D-NvN"/>
                             <constraint firstItem="SC9-bp-fIm" firstAttribute="top" secondItem="oNZ-Fx-ONu" secondAttribute="bottom" constant="39" id="GbK-M7-qBF"/>
                             <constraint firstItem="HbG-HU-MHp" firstAttribute="centerY" secondItem="KZ8-t3-bLN" secondAttribute="centerY" id="OtG-Mg-Lv7"/>
                             <constraint firstAttribute="leadingMargin" secondItem="5sU-Xq-Ohq" secondAttribute="leading" id="b8D-CZ-5lG"/>
@@ -1042,7 +1050,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsv-ON-5Sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781" y="1490"/>
+            <point key="canvasLocation" x="1779.7101449275365" y="1489.4021739130435"/>
         </scene>
         <!--Session-->
         <scene sceneID="5Lz-ZP-23m">
