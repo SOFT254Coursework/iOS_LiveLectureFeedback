@@ -13,6 +13,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var txt_sessionId: UITextField!
     
+    var studentId: String?
+    
     let limitLength = 6
     
     var ref: FIRDatabaseReference!
@@ -52,11 +54,17 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func signUpSession(sessionId : String) {
+        var value : NSDictionary?
         ref.child("sessions").child(sessionId).observeSingleEvent(of: .value, with: { (snapshot) in
-            let value = snapshot.value as? NSDictionary
-            print(value!)
+            value = snapshot.value as? NSDictionary
+            if value != nil {
+                self.ref.child("participants/\(sessionId)/\(self.studentId!)").setValue(["question": false])
+            
             self.performSegue(withIdentifier: "SIGNIN", sender: self)
+            }
         })
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -84,4 +84,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             }
         })
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "StudentLogin" {
+            let nextVC = segue.destination as! SignUpViewController
+            nextVC.studentId = txt_id.text
+        }
+    }
 }
