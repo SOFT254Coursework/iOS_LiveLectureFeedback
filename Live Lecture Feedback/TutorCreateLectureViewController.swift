@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class TutorCreateLectureViewController: UITableViewController {
 
@@ -23,11 +24,12 @@ class TutorCreateLectureViewController: UITableViewController {
     
     var staffId: String?
     
+    var ref: FIRDatabaseReference!
+    
     override func viewDidLoad() {
     super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
+        ref = FIRDatabase.database().reference()
     }  
     
     
@@ -67,12 +69,12 @@ class TutorCreateLectureViewController: UITableViewController {
         } else {
             if indexPath.section == 0 {
                 ident = "TextEntry"
-                titleCell = tableView.dequeueReusableCell(withIdentifier: ident) as? TextEntryCell
-                return titleCell!
-            } else if indexPath.section == 1 {
-                ident = "TextEntry"
                 courseCodeCell = tableView.dequeueReusableCell(withIdentifier: ident) as? TextEntryCell
                 return courseCodeCell!
+            } else if indexPath.section == 1 {
+                ident = "TextEntry"
+                titleCell = tableView.dequeueReusableCell(withIdentifier: ident) as? TextEntryCell
+                return titleCell!
             } else if indexPath.section == 2{
                 ident = "DateTimeEntry"
                 startDateCell = tableView.dequeueReusableCell(withIdentifier: ident) as? dateTimeEntryCell
@@ -96,7 +98,21 @@ class TutorCreateLectureViewController: UITableViewController {
     }
     
     @IBAction func onSaveClick(_ sender: Any) {
-        print((courseCodeCell?.dataEntryTextField.text)! as String)
+        
+        guard let courseCode = courseCodeCell?.dataEntryTextField.text, !courseCode.isEmpty else {
+            return
+        }
+        guard let title = titleCell?.dataEntryTextField.text, !title.isEmpty else {
+            return
+        }
+        guard let startDate = startDateCell?.dateTimePicker.date, startDate > Date() else {
+            return
+        }
+        guard let endDate = endDateCell?.dateTimePicker.date, endDate < startDate else {
+            return
+        }
+        
+        
     }
     /*
     // MARK: - Navigation
