@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class TutorLecturesViewController: UITableViewController {
 
     @IBOutlet weak var tutorLecturesExitOutlet: UIButton!
     @IBOutlet weak var tutorLecturesCreateOutlet: UIButton!
     
+    var staffId: String?
+    
+    var ref: FIRDatabaseReference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: UIBarButtonItemStyle.plain, target: self, action:#selector(addTouched) )
+        
+        ref = FIRDatabase.database().reference()
     }
 
     @IBAction func addTouched(_ sender: Any) {        
@@ -52,6 +59,13 @@ class TutorLecturesViewController: UITableViewController {
     }
 
     @IBAction func tutorLecturesCreateAction(_ sender: Any) {
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "TutorCreateLecture" {
+            let nextVC = segue.destination as! TutorCreateLectureViewController
+            nextVC.staffId = staffId
+        }
     }
     
     /*

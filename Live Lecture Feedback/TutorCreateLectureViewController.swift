@@ -22,6 +22,8 @@ class TutorCreateLectureViewController: UITableViewController {
     var startDateCell: dateTimeEntryCell?
     var endDateCell: dateTimeEntryCell?
     
+    var staffId: String?
+    
     override func viewDidLoad() {
     super.viewDidLoad()
 
