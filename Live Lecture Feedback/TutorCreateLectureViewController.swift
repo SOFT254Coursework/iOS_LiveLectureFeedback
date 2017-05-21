@@ -145,6 +145,7 @@ class TutorCreateLectureViewController: UITableViewController {
                     "running": false,
                     "title": title,
                     "warning_rate": 0.5])
+                self.performSegue(withIdentifier: "SaveSession", sender: Any?.self)
             } // end if
         }) // end set value
     }
