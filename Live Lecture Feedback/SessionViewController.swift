@@ -31,6 +31,14 @@ class SessionViewController: UIViewController {
         lbl_title.text = sessionTitle
         
         ref = FIRDatabase.database().reference()
+        
+//        ref.child("participants/\(sessionId!)/\(studentId!)").observe(FIRDataEventType, with: { (snapshot) in
+//            let value = snapshot.value as? [Bool: AnyObject] ?? false
+//            if (!value) && question {
+//                btn_submit.setImage(#imageLiteral(resourceName: "RedButton"), for: .normal)
+//                question = false
+//            }
+//        })
     }
 
     override func didReceiveMemoryWarning() {
